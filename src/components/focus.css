@@ -10,7 +10,7 @@
 }
 
 .presentu-focus-column {
-    background-color: tomato;
+    background-color: none;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -20,4 +20,15 @@
     display: flex;
     flex-direction: row;
     flex: 1 0 51%;
+}
+
+.focus-title {
+    color: #265880;
+    font-weight: 400;
+}
+
+.focus-text-body {
+    color: rgba(0, 0, 0, .6);
+    padding-right: 3rem;
+    font-size: 0.9rem;
 }

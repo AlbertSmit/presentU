@@ -631,40 +631,46 @@ pre tt:after {
 .presentu-fn-comp-illustration,
 .presentu-fn-comp-teacherhighlight,
 .presentu-fn-comp-logowall,
-.presentu-fn-comp-form {
+.presentu-fn-comp-contact {
   min-height: 80vh;
 }
 
 .presentu-fn-comp-landing {
-  background-color: lightblue;
+  background-color: none;
   display: flex;
 }
 
 .presentu-fn-comp-about {
-  background-color: blue;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .presentu-fn-comp-whowhatwhere {
-  background-color: greenyellow;
+  background-color: none;
 }
 
 .presentu-fn-comp-focus {
-  background-color: orangered;
+  background-color: none;
   display: flex;
 }
 
 .presentu-fn-comp-illustration {
   background-color: lightpink;
+  display: flex;
 }
 
 .presentu-fn-comp-teacherhighlight {
-  background-color: violet;
+  background-color: #c5d0d2;
+  display: flex;
 }
 
 .presentu-fn-comp-logowall {
   background-color: plum;
+  display: flex;
+  flex-direction: column;
 }
 
-.presentu-fn-comp-form {
+.presentu-fn-comp-contact {
   background-color: gray;
 }

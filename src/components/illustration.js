@@ -1,10 +1,12 @@
 import React from 'react'
+import './illustration.css'
 
 export default function Illustration() {
     return (
         <div className='presentu-fn-comp-illustration'>
-            <h1>Illustration.</h1>
-            <h1>(hele grote U).</h1>
+            <div className='giant-u-container' >
+                <p className='giant-u' >U</p>
+            </div>
         </div>
     )
 }
