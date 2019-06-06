@@ -620,3 +620,38 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* Custom */
+/* below */
+
+.presentu-fn-comp-landing {
+  background-color: red;
+}
+
+.presentu-fn-comp-about {
+  background-color: blue;
+}
+
+.presentu-fn-comp-whowhatwhere {
+  background-color: greenyellow;
+}
+
+.presentu-fn-comp-focus {
+  background-color: orangered;
+}
+
+.presentu-fn-comp-illustration {
+  background-color: lightpink;
+}
+
+.presentu-fn-comp-teacherhighlight {
+  background-color: violet;
+}
+
+.presentu-fn-comp-logowall {
+  background-color: plum;
+}
+
+.presentu-fn-comp-form {
+  background-color: gray;
+}
