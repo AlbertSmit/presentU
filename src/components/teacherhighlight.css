@@ -1,0 +1,10 @@
+.presentu-teacherhighlight-teachers {
+    display: flex;
+}
+
+.presentu-teacherhighlight-left,
+.presentu-teacherhighlight-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

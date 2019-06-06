@@ -624,8 +624,20 @@ pre tt:after {
 /* Custom */
 /* below */
 
+.presentu-fn-comp-landing,
+.presentu-fn-comp-about,
+.presentu-fn-comp-whowhatwhere,
+.presentu-fn-comp-focus,
+.presentu-fn-comp-illustration,
+.presentu-fn-comp-teacherhighlight,
+.presentu-fn-comp-logowall,
+.presentu-fn-comp-form {
+  min-height: 80vh;
+}
+
 .presentu-fn-comp-landing {
-  background-color: red;
+  background-color: lightblue;
+  display: flex;
 }
 
 .presentu-fn-comp-about {
@@ -638,6 +650,7 @@ pre tt:after {
 
 .presentu-fn-comp-focus {
   background-color: orangered;
+  display: flex;
 }
 
 .presentu-fn-comp-illustration {

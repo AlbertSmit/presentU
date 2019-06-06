@@ -25,11 +25,6 @@ const IndexPage = () => (
     <TeacherHighlight />
     <LogoWall />
     <Form />
-
-    <h4> Bij PresentU geloven wij, 
-        Maarten en Sus, 
-        dat iedereen kneitergoed kan leren presenteren.</h4>
-    <p>Dat wij je daarbij kunnen helpen, door precies de handvatten te geven die je nodig hebt om kundig en ontspannen te spreken.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

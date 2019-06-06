@@ -1,0 +1,12 @@
+.presentu-landing-hero-content {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+.presentu-landing-hero-image {
+    background-color: red;
+    display: flex;
+    flex: 2;
+}
