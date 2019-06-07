@@ -632,45 +632,76 @@ pre tt:after {
 .presentu-fn-comp-teacherhighlight,
 .presentu-fn-comp-logowall,
 .presentu-fn-comp-contact {
-  min-height: 80vh;
+  min-height: none;
+}
+
+.content-width-rule {
+    display: flex;
+    /* from main div */
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 1rem 1rem;
+    padding-top: 0;
+}
+
+.fc {
+  flex-direction: column;
+}
+
+.fr {
+  flex-direction: row;
 }
 
 .presentu-fn-comp-landing {
   background-color: none;
-  display: flex;
 }
 
 .presentu-fn-comp-about {
-  background-color: none;
-  display: flex;
+  background-color: #c5d0d2;
   flex-direction: column;
 }
 
 .presentu-fn-comp-whowhatwhere {
-  background-color: none;
+  background-color: #c5d0d2;
 }
 
 .presentu-fn-comp-focus {
   background-color: none;
-  display: flex;
 }
 
 .presentu-fn-comp-illustration {
-  background-color: lightpink;
+  background-color: #e73040;
   display: flex;
 }
 
 .presentu-fn-comp-teacherhighlight {
   background-color: #c5d0d2;
-  display: flex;
 }
 
 .presentu-fn-comp-logowall {
   background-color: plum;
-  display: flex;
-  flex-direction: column;
 }
 
 .presentu-fn-comp-contact {
-  background-color: gray;
+  background-color: #e73040;
+}
+
+.presentu-fn-comp-footer {
+  background-color: #c92735;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-pU-red {
+  color: #e73040;
+}
+
+.text-gray {
+  color: rgba(51, 51, 51, .83);
+}
+
+.text-pink {
+  color: #fbd4cd;
 }

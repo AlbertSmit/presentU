@@ -1,13 +1,8 @@
-.center-vertical {
-    background-color: none;
-}
-
 .presentu-landing-hero-content {
     display: flex;
-    align-self: center;
-    height: 100%;
     flex-direction: column;
     flex: 4;
+    min-height: 80vh;
 }
 
 .presentu-landing-hero-image {

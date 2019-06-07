@@ -8,16 +8,18 @@ const textmaarten = "Maarten van den Berg is afgestudeerd aan de Koningstheatera
 export default function TeacherHighlight() {
     return (
         <div className='presentu-fn-comp-teacherhighlight' >
-            <div className='presentu-teacherhighlight-teachers'>
-                <div className='presentu-teacherhighlight-left' >
-                    <h1 className='teacher-name' >Sus Verbruggen</h1>
-                    <p>{textsus}</p>
-                    <Link to="/page-2/">Meer</Link>
-                </div>
-                <div className='presentu-teacherhighlight-right' >
-                    <h1 className='teacher-name' >Maarten van den Berg</h1>
-                    <p>{textmaarten}</p>
-                    <Link to="/page-2/">Meer</Link>
+            <div className='content-width-rule'>
+                <div className='presentu-teacherhighlight-teachers'>
+                    <div className='presentu-teacherhighlight-left' >
+                        <h1 className='teacher-name text-pU-red' >Sus Verbruggen</h1>
+                        <p className='text-gray' >{textsus}</p>
+                        <Link to="/page-2/">Meer</Link>
+                    </div>
+                    <div className='presentu-teacherhighlight-right' >
+                        <h1 className='teacher-name text-pU-red' >Maarten van den Berg</h1>
+                        <p className='text-gray' >{textmaarten}</p>
+                        <Link to="/page-2/">Meer</Link>
+                    </div>
                 </div>
             </div>
         </div>

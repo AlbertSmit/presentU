@@ -16,20 +16,22 @@ export default function Contact() {
 
     return (
         <div className='presentu-fn-comp-contact' >
-            <h1>Contact.</h1>
-            <h2>
-                Geïnteresseerd in een training?
+            <div className='content-width-rule fc'>
+                <h1 className='text-pink' >Contact.</h1>
+                <h2 className='text-pink' >
+                    Geïnteresseerd in een training?
 
-                Neem contact op.
-                Dan praten we over een training en maken we een offerte.
-            </h2>
-            <Form onSubmit={handleSubmit}>
-                <Input name="text" />
-                <Input name="email" />
-                <Input name="mobile" />
+                    Neem contact op.
+                    Dan praten we over een training en maken we een offerte.
+                </h2>
+                <Form onSubmit={handleSubmit}>
+                    <Input name="text" />
+                    <Input name="email" />
+                    <Input name="mobile" />
 
-                <button type="submit">Klik</button>
-            </Form>
+                    <button type="submit">Klik</button>
+                </Form>
+            </div>
         </div>
     )
 }

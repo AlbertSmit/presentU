@@ -18,33 +18,35 @@ const image = 'temp.jpg'
 export default function Focus() {
     return (
         <div className='presentu-fn-comp-focus' >
-            <div className='presentu-focus-u-decorator' ></div>
-                <div className='presentu-focus-items' >
-                    <div className='presentu-focus-row' >
-                        <div className='presentu-focus-column' >
-                            <img src={image} alt='temp' height='50' width='50' />
-                            <h3 className='focus-title' >{focusfirst}</h3>
-                            <p className='focus-text-body' >{focusfirstcontent}</p>
+            <div className='content-width-rule fr'>
+                <div className='presentu-focus-u-decorator' ></div>
+                    <div className='presentu-focus-items' >
+                        <div className='presentu-focus-row' >
+                            <div className='presentu-focus-column' >
+                                <img src={image} alt='temp' height='50' width='50' />
+                                <h3 className='focus-title' >{focusfirst}</h3>
+                                <p className='focus-text-body' >{focusfirstcontent}</p>
+                            </div>
+                            <div className='presentu-focus-column' >
+                                <img src={image} alt='temp' height='50' width='50' />
+                                <h3 className='focus-title' >{focussecond}</h3>
+                                <p className='focus-text-body' >{focussecondcontent}</p>
+                            </div>
                         </div>
-                        <div className='presentu-focus-column' >
-                            <img src={image} alt='temp' height='50' width='50' />
-                            <h3 className='focus-title' >{focussecond}</h3>
-                            <p className='focus-text-body' >{focussecondcontent}</p>
-                        </div>
-                    </div>
-                    <div className='presentu-focus-row' >
-                        <div className='presentu-focus-column' >
-                            <img src={image} alt='temp' height='50' width='50' />
-                            <h3 className='focus-title' >{focusthird}</h3>
-                            <p className='focus-text-body' >{focusthirdcontent}</p>
-                        </div>
-                        <div className='presentu-focus-column' >
-                            <img src={image} alt='temp' height='50' width='50' />
-                            <h3 className='focus-title' >{focusfourth}</h3>
-                            <p className='focus-text-body' >{focusfourthcontent}</p>
+                        <div className='presentu-focus-row' >
+                            <div className='presentu-focus-column' >
+                                <img src={image} alt='temp' height='50' width='50' />
+                                <h3 className='focus-title' >{focusthird}</h3>
+                                <p className='focus-text-body' >{focusthirdcontent}</p>
+                            </div>
+                            <div className='presentu-focus-column' >
+                                <img src={image} alt='temp' height='50' width='50' />
+                                <h3 className='focus-title' >{focusfourth}</h3>
+                                <p className='focus-text-body' >{focusfourthcontent}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
     )
 }

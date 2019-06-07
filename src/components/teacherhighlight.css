@@ -1,6 +1,6 @@
 .presentu-teacherhighlight-teachers {
     display: flex;
-    height: 100%;
+    min-height: 60vh;
 }
 
 .presentu-teacherhighlight-left,
@@ -13,5 +13,5 @@
 }
 
 .teacher-name {
-    color: tomato;
+    font-weight: 400;
 }
