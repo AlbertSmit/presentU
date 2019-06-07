@@ -1,21 +1,9 @@
 import React from 'react'
 import './focus.css'
 
-const focusfirst = 'Stem'
-const focusfirstcontent = 'We verkennen de mogelijkheden van de stem en werken aan articulatie, intonatie, tempo en volume.'
-
-const focussecond = 'Fysiek'
-const focussecondcontent = 'We werken aan jouw fysieke gedragspatronen, ruimtelijk bewustzijn en lichaamshouding en leren je die doelgericht in te zetten.'
-
-const focusthird = 'Contact'
-const focusthirdcontent = 'We onderzoeken de relatie tussen spreker en publiek, zodat je spreekt met dynamiek en echt contact maakt met je publiek.'
-
-const focusfourth = 'Resultaatgericht'
-const focusfourthcontent = 'We gaan aan de slag met jouw werkpunten en professionele context. We houden een spiegel voor en geven concrete feedback. We trainen op de vloer met praktische werkvormen.'
-
 const image = 'temp.jpg'
 
-export default function Focus() {
+export default function Focus(props) {
     return (
         <div className='presentu-fn-comp-focus' >
             <div className='content-width-rule fr'>
@@ -24,25 +12,25 @@ export default function Focus() {
                         <div className='presentu-focus-row' >
                             <div className='presentu-focus-column' >
                                 <img src={image} alt='temp' height='50' width='50' />
-                                <h3 className='focus-title' >{focusfirst}</h3>
-                                <p className='focus-text-body' >{focusfirstcontent}</p>
+                                <h3 className='focus-title' >{props.data.prismicFocus.data.stem.text}</h3>
+                                <p className='focus-text-body' >{props.data.prismicFocus.data.stem_content.text}</p>
                             </div>
                             <div className='presentu-focus-column' >
                                 <img src={image} alt='temp' height='50' width='50' />
-                                <h3 className='focus-title' >{focussecond}</h3>
-                                <p className='focus-text-body' >{focussecondcontent}</p>
+                                <h3 className='focus-title' >{props.data.prismicFocus.data.fysiek.text}</h3>
+                                <p className='focus-text-body' >{props.data.prismicFocus.data.fysiek_content.text}</p>
                             </div>
                         </div>
                         <div className='presentu-focus-row' >
                             <div className='presentu-focus-column' >
                                 <img src={image} alt='temp' height='50' width='50' />
-                                <h3 className='focus-title' >{focusthird}</h3>
-                                <p className='focus-text-body' >{focusthirdcontent}</p>
+                                <h3 className='focus-title' >{props.data.prismicFocus.data.contact.text}</h3>
+                                <p className='focus-text-body' >{props.data.prismicFocus.data.contact_content.text}</p>
                             </div>
                             <div className='presentu-focus-column' >
                                 <img src={image} alt='temp' height='50' width='50' />
-                                <h3 className='focus-title' >{focusfourth}</h3>
-                                <p className='focus-text-body' >{focusfourthcontent}</p>
+                                <h3 className='focus-title' >{props.data.prismicFocus.data.resultaatgericht.text}</h3>
+                                <p className='focus-text-body' >{props.data.prismicFocus.data.resultaat_content.text}</p>
                             </div>
                         </div>
                     </div>

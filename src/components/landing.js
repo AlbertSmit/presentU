@@ -2,7 +2,7 @@ import React from 'react'
 import Image from './image'
 import './landing.css'
 
-export default function Landing() {
+export default function Landing(props) {
     return (
         <div className='presentu-fn-comp-landing' >
             <div className='content-width-rule fr' >
@@ -11,14 +11,10 @@ export default function Landing() {
                 </div>
                 <div className='presentu-landing-hero-content' >
                     <h1 className='landing-hero-text-large' >
-                        Bij PresentU geloven wij, 
-                        Maarten ( M ) en Sus ( S ), 
-                        dat iedereen kneitergoed kan leren presenteren.
+                        {props.data.prismicFocus.data.koptekst.text}
                     </h1>
                     <p className='landing-hero-text-medium' >
-                        Dat wij je daarbij kunnen helpen, 
-                        door precies de handvatten te geven die je nodig hebt 
-                        om kundig en ontspannen te spreken.
+                        {props.data.prismicFocus.data.broodtekst.text}
                     </p>
                 </div>
             </div>

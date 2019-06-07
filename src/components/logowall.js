@@ -13,7 +13,7 @@ const logoSources = [
     'image'
 ]
 
-export default function LogoWall() {
+export default function LogoWall(props) {
     return (
         <div className='presentu-fn-comp-logowall' >
             <div className='content-width-rule fc' >

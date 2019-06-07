@@ -17,41 +17,77 @@ import Contact from "../components/contact";
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <Landing />
-    <About />
+    <Landing data={data}/>
+    <About data={data}/>
     <WhoWhatWhere data={data}/>
-    <Focus />
-    <Illustration />
-    <TeacherHighlight />
-    <LogoWall />
-    <Contact />
+    <Focus data={data}/>
+    <Illustration data={data}/>
+    <TeacherHighlight data={data}/>
+    <LogoWall data={data}/>
+    <Contact data={data}/>
 
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
-    </div>
+    </div> */}
   </Layout>
 )
 
 export const query = graphql`
   query {
-    prismicWhoWhatWhere {
+    prismicFocus {
     data {
+      broodtekst {
+        text
+      }
+      contact {
+        text
+      }
+      contact_content {
+        text
+      }
+      fysiek {
+        text
+      }
+      fysiek_content {
+        text
+      }
+      koptekst {
+        text
+      }
+      over {
+        text
+      }
+      over_content {
+        text
+      }
+      resultaat_content {
+        text
+      }
+      resultaatgericht {
+        text
+      }
+      stem {
+        text
+      }
+      stem_content {
+        text
+      }
       waarom {
         text
       }
       waarom_content {
         text
       }
-      wie {
-        text
-      }
-      wie_content {
-        text
-      }
       wat {
         text
       }
       wat_content {
+        text
+      }
+      wie {
+        text
+      }
+      wie_content {
         text
       }
     }

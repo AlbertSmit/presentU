@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Input } from '@rocketseat/unform';
 
-export default function Contact() {
+export default function Contact(props) {
 
     function handleSubmit(data) {
         console.log(data);
@@ -19,10 +19,7 @@ export default function Contact() {
             <div className='content-width-rule fc'>
                 <h1 className='text-pink' >Contact.</h1>
                 <h2 className='text-pink' >
-                    Geïnteresseerd in een training?
-
-                    Neem contact op.
-                    Dan praten we over een training en maken we een offerte.
+                    {props.data.prismicFocus.data.contact.text}
                 </h2>
                 <Form onSubmit={handleSubmit}>
                     <Input name="text" />
