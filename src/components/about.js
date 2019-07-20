@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './about.css'
+import './about.scss'
 
 export default function About(props) {
     return (
@@ -8,7 +8,7 @@ export default function About(props) {
             <div className='content-width-rule fc'>
                 <div className='about-text-splitter' >
                     <div className='about-text-who' >
-                        <h1 className='text-white' >{props.data.prismicFocus.data.over.text}</h1>
+                        <h1>{props.data.prismicFocus.data.over.text}</h1>
                     </div>
                 </div>
                 <div className='about-text-splitter' >

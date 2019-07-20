@@ -1,5 +1,5 @@
 import React from 'react'
-import './whowhatwhere.css'
+import './whowhatwhere.scss'
 
 export default function WhoWhatWhere(props) {
     console.log(props.data.prismicFocus.data.waarom.text)

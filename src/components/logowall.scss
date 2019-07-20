@@ -1,0 +1,28 @@
+.logowall-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: auto;
+
+    .logowall-item {
+        width: auto;
+        max-height: auto;
+        flex: 1 31%;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        img {
+            max-width: 80%;
+            width: auto;
+            padding: 1rem;
+        }
+    }
+}
+
+.logowall-hero-text {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}

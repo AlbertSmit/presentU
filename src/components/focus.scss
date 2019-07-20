@@ -1,0 +1,43 @@
+@import '../utilities/variables.scss';
+
+.presentu-focus-u-decorator{
+    display: flex;
+    min-height: 80vh;
+    flex: 2;
+}
+
+.presentu-focus-items{
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    flex: 4;
+
+    .presentu-focus-row {
+        display: flex;
+        flex-direction: row;
+        flex: 1 0 51%;
+
+        .presentu-focus-column {
+            background-color: none;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            transition: 1s ease-out;
+
+            .focus-title {
+                color: $colors-azure;
+                font-weight: 400;
+            }
+
+            p {
+                color: $colors-gray;
+                padding-right: 3rem;
+            }
+        }
+
+        .presentu-focus-column:hover {
+            transition: 0.5s ease;
+            transform: translateX(-10px);
+        }
+    }
+}

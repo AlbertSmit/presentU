@@ -1,19 +1,20 @@
 .presentu-landing-hero-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 4;
     min-height: 80vh;
+
+    h1 {
+        padding: 0 0 2rem 1rem;
+    }
+
+    p {
+        padding: 0 0 0 1rem;
+    }
 }
 
 .presentu-landing-hero-image {
     display: flex;
     flex: 2;
-}
-
-.landing-hero-text-large {
-    padding: 0 0 2rem 1rem;
-}
-
-.landing-hero-text-medium {
-    padding: 0 0 0 1rem;
 }

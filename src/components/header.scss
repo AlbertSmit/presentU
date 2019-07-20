@@ -1,0 +1,12 @@
+@import '../utilities/variables';
+
+header {
+    div {
+        h1 {
+            .link {
+                color: $colors-black;
+                text-decoration: none;
+            }
+        }
+    }
+}

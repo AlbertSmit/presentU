@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from './image'
-import './landing.css'
+import './landing.scss'
 
 export default function Landing(props) {
     return (
@@ -10,10 +10,10 @@ export default function Landing(props) {
                     <Image />
                 </div>
                 <div className='presentu-landing-hero-content' >
-                    <h1 className='landing-hero-text-large' >
+                    <h1>
                         {props.data.prismicFocus.data.koptekst.text}
                     </h1>
-                    <p className='landing-hero-text-medium' >
+                    <p>
                         {props.data.prismicFocus.data.broodtekst.text}
                     </p>
                 </div>

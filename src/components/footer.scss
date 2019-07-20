@@ -1,0 +1,19 @@
+@import '../utilities/variables.scss';
+
+.footer {
+    display: flex;
+    width: 100%;
+
+    div {
+        flex: 1;
+        max-width: 80%;
+
+        h5 {
+            color: $colors-pink;
+        }
+
+        p {
+            color: $colors-pink;
+        }
+    }
+}

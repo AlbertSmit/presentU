@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: `presentU`,
@@ -6,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,11 +31,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: 'gatsby-source-sanity',
       options: {
-        spaceId: `qduhwk73txge`,
-        accessToken: `aRyktdu2f-Q9im_aGbuMAbOw4fQIYyDgejAAWJGWIv4`,
-      },
+        projectId: '10khklw1',
+        dataset: 'presentu',
+        // To enable preview of drafts, copy .env-example into .env,
+        // and add a token with read permissions
+        token: process.env.SANITY_TOKEN,
+        watchMode: true,
+        overlayDrafts: true
+      }
     },
     {
       resolve: 'gatsby-source-prismic',

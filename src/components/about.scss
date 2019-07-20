@@ -1,0 +1,44 @@
+@import '../utilities/variables.scss';
+
+.about-text-block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-items: flex-end;
+    width: 60%;
+
+    p {
+        color: $colors-white;
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+    }
+
+    a {
+        line-height: 1.4rem;
+        text-decoration: none;
+        color: $colors-red;
+    }
+}
+
+.about-text-splitter {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: $colors-white;
+    min-height: 30vh;
+    padding: 4rem 0 4rem 0;
+
+    .about-text-who {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-self: center;
+        height: 100%;
+
+        h1 {
+            font-family: 'acumin-pro-wide', sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+        }
+    }
+}

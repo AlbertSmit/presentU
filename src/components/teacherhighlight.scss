@@ -1,6 +1,17 @@
+@import '../utilities/variables.scss';
+
 .presentu-teacherhighlight-teachers {
     display: flex;
     min-height: 60vh;
+
+    h1 {
+        font-weight: 400;
+        color: $colors-red;
+    }
+
+    p {
+        color: $colors-gray;
+    }
 }
 
 .presentu-teacherhighlight-left,
@@ -10,8 +21,4 @@
     flex: 1;
     flex-direction: column;
     padding: 0 1rem 0 2rem;
-}
-
-.teacher-name {
-    font-weight: 400;
 }

@@ -1,5 +1,9 @@
+@import url("https://use.typekit.net/iic0uan.css");
+
 html {
-  font-family: sans-serif;
+  font-family: 'acumin-pro', sans-serif;
+  font-style: normal;
+  font-weight: 100;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -199,8 +203,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: hsla(0, 0%, 0%, 0.6);
+  font-family: 'acumin-pro-wide', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -657,6 +663,13 @@ pre tt:after {
 }
 
 .presentu-fn-comp-about {
+  position: relative;
+  background-color: #c5d0d2;
+  background: url('http://presentu.nl/images/Middel-5d.png');
+  background-position-x: 0px;
+  background-position-y: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #c5d0d2;
   flex-direction: column;
 }

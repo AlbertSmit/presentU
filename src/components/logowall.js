@@ -1,16 +1,16 @@
 import React from 'react'
-import './logowall.css'
+import './logowall.scss'
 
 const logoSources = [
-    'image',
-    'image',
-    'image',
-    'image',
-    'image',
-    'image',
-    'image',
-    'image',
-    'image'
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png',
+    'http://pngimg.com/uploads/google/google_PNG19644.png'
 ]
 
 export default function LogoWall(props) {
@@ -21,7 +21,7 @@ export default function LogoWall(props) {
                     <h1>Logo Wall.</h1>
                 </div>
                 <div className='logowall-collection'>
-                    {logoSources.map(i => <div className='logowall-item'><img className='logowall-center' src={i} height='100' width='100' /></div>)}
+                    {logoSources.map(i => <div className='logowall-item'><img src={i} /></div>)}
                 </div>
             </div>
         </div>
