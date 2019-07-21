@@ -1,0 +1,21 @@
+@import '../utilities/variables.scss';
+
+div {
+    flex: 2;
+    align-self: center;
+    justify-self: center;
+
+    h6 {
+        font-display: $system-font;
+        font-size: 0.75rem;
+        font-weight: 400;
+        padding-left: 3rem;
+        margin: 0;
+    }
+    
+    .slogan {
+        color: $colors-black;
+        font-weight: 600;
+        padding-right: 2rem;
+    }
+}

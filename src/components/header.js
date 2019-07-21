@@ -1,8 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Menu from './menu'
 
 import './header.scss'
+
+const logo = 'http://presentu.nl/images/Middel-10d-p-500.png';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -22,9 +25,10 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           className="link">
-          {siteTitle}
+          <img src={logo}></img>
         </Link>
       </h1>
+      <Menu />
     </div>
   </header>
 )

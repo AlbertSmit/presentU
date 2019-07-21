@@ -2,10 +2,23 @@
 
 header {
     div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
         h1 {
+            flex: 1;
+
             .link {
                 color: $colors-black;
                 text-decoration: none;
+            }
+
+            img{
+                max-width: 50%;
+                align-self: center;
+                justify-self: center;
+                margin: 0;
             }
         }
     }

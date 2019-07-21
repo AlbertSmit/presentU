@@ -1,3 +1,5 @@
+@import '../utilities/variables.scss';
+
 .presentu-landing-hero-content {
     display: flex;
     flex-direction: column;
@@ -7,14 +9,37 @@
 
     h1 {
         padding: 0 0 2rem 1rem;
+        font-family: $secondary-font;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $colors-black;
+        animation: appear 2s ease;
     }
 
     p {
         padding: 0 0 0 1rem;
+        animation: appear 2s ease;
+        animation-delay: 1s;
+        opacity: 0;
+        animation-fill-mode: forwards;
     }
 }
 
 .presentu-landing-hero-image {
     display: flex;
     flex: 2;
+
+    img {
+        max-width: 90%;
+        align-self: center
+    }
+}
+
+.presentu-landing-hero-image + .presentu-landing-hero-content {
+    margin-left: 10%;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateX(20px) }
+    to { opacity: 1; transform: translateX(0px)}
 }

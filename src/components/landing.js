@@ -1,13 +1,14 @@
 import React from 'react'
-import Image from './image'
 import './landing.scss'
+
+const temp = 'http://presentu.nl/images/Middel-47dff-p-500.png';
 
 export default function Landing(props) {
     return (
         <div className='presentu-fn-comp-landing' >
             <div className='content-width-rule fr' >
                 <div className='presentu-landing-hero-image'>
-                    <Image />
+                    <img src={temp}></img>
                 </div>
                 <div className='presentu-landing-hero-content' >
                     <h1>

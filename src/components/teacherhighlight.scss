@@ -2,11 +2,13 @@
 
 .presentu-teacherhighlight-teachers {
     display: flex;
-    min-height: 60vh;
+    min-height: auto;
 
     h1 {
-        font-weight: 400;
+        font-weight: 600;
+        font-size: 2.5rem;
         color: $colors-red;
+        font-family: $secondary-font;
     }
 
     p {
@@ -17,8 +19,12 @@
 .presentu-teacherhighlight-left,
 .presentu-teacherhighlight-right {
     display: flex;
-    align-self: center;
+    align-self: flex-start;
     flex: 1;
     flex-direction: column;
-    padding: 0 1rem 0 2rem;
+    padding: 6rem 0 6rem 0;
+}
+
+.presentu-teacherhighlight-left + .presentu-teacherhighlight-right {
+    margin-left: 10%;
 }
