@@ -1,6 +1,7 @@
 @import '../utilities/variables.scss';
 
-div {
+.menu {
+    display: flex;
     flex: 2;
     align-self: center;
     justify-self: center;

@@ -4,7 +4,7 @@ import './menu.scss'
 
 export default function menu() {
     return (
-        <div>
+        <div className='menu'>
             <h6 className='slogan'>Presenteren vanuit theatervorm</h6>
             <h6>Wie</h6>
             <h6>Werkwijze</h6>
