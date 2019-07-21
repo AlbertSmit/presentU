@@ -8,20 +8,22 @@ export default function Footer() {
             <div className='content-width-rule fr'>
                 <div className='footer'>
                     <div>
-                        <h5>{new Date().getFullYear()}. Built with love.</h5>
-                        <p>a</p>
+                        <h5>PresentU — {new Date().getFullYear()}.</h5>
                     </div>
                     <div>
-                        <h5>2</h5>
-                        <p>b</p>
+                        {/* <h5></h5>
+                        <p></p> */}
                     </div>                    
                     <div>
-                        <h5>3</h5>
-                        <p>c</p>
+                        <h5>Social</h5>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
                     </div>
                     <div>
-                        <h5>4</h5>
-                        <p>d</p>
+                        <h5>Adres</h5>
+                        <p>Dingesgebouw</p>
+                        <p>Somestreet 34-a</p>
+                        <p>7777 AB  Utrecht</p>
                     </div>
                 </div>
             </div>

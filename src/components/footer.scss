@@ -6,14 +6,19 @@
 
     div {
         flex: 1;
+        padding: 2rem 0 2rem 0;
         max-width: 80%;
 
         h5 {
-            color: $colors-pink;
+            color: $colors-white;
+            font-size: 0.75rem;
         }
 
         p {
             color: $colors-pink;
+            font-family: $system-font;
+            margin: 0;
+            font-size: 0.75rem;
         }
     }
 }

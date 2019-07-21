@@ -12,8 +12,16 @@
         font-family: $secondary-font;
         font-size: 3rem;
         font-weight: 500;
+        line-height: 3.5rem;
         color: $colors-black;
         animation: appear 2s ease;
+
+        span {
+            img {
+                max-width: 2rem;
+                margin: 0;
+            }
+        }
     }
 
     p {

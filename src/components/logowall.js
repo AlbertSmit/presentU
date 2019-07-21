@@ -18,7 +18,7 @@ export default function LogoWall(props) {
         <div className='presentu-fn-comp-logowall' >
             <div className='content-width-rule fc' >
                 <div className='logowall-hero-text'>
-                    <h1>Logo Wall.</h1>
+                    <h1>Tevreden klanten</h1>
                 </div>
                 <div className='logowall-collection'>
                     {logoSources.map(i => <div className='logowall-item'><img src={i} /></div>)}

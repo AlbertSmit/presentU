@@ -15,14 +15,16 @@ export default function Contact(props) {
             },
             body: JSON.stringify(data)
         })
-        .then(res => console.log(res))
+        .then(res => {
+            console.log(res)
+            console.log(res.status)
+        })
         .catch(e => console.error(e))
     }
 
     return (
         <div className='presentu-fn-comp-contact' >
             <div className='content-width-rule fc'>
-                <h1 className='text-pink' >Contact.</h1>
                 <h2 className='text-pink' >
                     {props.data.prismicFocus.data.contact.text}
                 </h2>
@@ -32,19 +34,31 @@ export default function Contact(props) {
                     initialValues={{ name: '', email: '', text: '' }}
                     render={({ handleSubmit, submitting, pristine, values }) => (
                         <form onSubmit={handleSubmit}>
+
                             <div className='contact-div'>
-                                <label>Naam</label>
+                                <label>Tekst</label>
+                                <Field 
+                                name="text" 
+                                component="textarea" 
+                                type="text"
+                                placeholder="Type hier je bericht." 
+                                className='contact-field-area'
+                                />
+                            </div>
+
+                            <div className='contact-div'>
+                                <label>Mijn naam is</label>
                                 <Field
                                 name="name"
                                 component="input"
                                 type="text"
-                                placeholder="Jouw naam"
+                                placeholder="Pieter Peters"
                                 className='contact-field'
                                 />
                             </div>
-                            
+                        
                             <div className='contact-div'>
-                                <label>Email</label>
+                                <label>Ik ben digitaal te bereiken op</label>
                                 <Field
                                 name="email"
                                 component="input"
@@ -53,14 +67,14 @@ export default function Contact(props) {
                                 className='contact-field'
                                 />
                             </div>
-
+                            
                             <div className='contact-div'>
-                                <label>Tekst</label>
-                                <Field 
-                                name="text" 
-                                component="textarea" 
+                                <label>En je kunt mij telefonisch bereiken op</label>
+                                <Field
+                                name="number"
+                                component="input"
                                 type="text"
-                                placeholder="Typ hier je tekst" 
+                                placeholder="06 – 1212 3434"
                                 className='contact-field'
                                 />
                             </div>

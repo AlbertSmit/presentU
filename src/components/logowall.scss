@@ -1,3 +1,5 @@
+@import '../utilities/variables.scss';
+
 .logowall-collection {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +10,7 @@
     .logowall-item {
         width: auto;
         max-height: auto;
-        flex: 1 31%;
+        flex: 1 32%;
         justify-self: center;
         text-align: center;
         margin-bottom: 2rem;
@@ -22,7 +24,12 @@
 }
 
 .logowall-hero-text {
-    color: white;
     text-align: center;
+    padding: 1rem;
     margin: 1rem;
+
+    h1 {
+        color: $colors-azure;
+        font-weight: 400;
+    }
 }
