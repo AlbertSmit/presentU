@@ -13,12 +13,12 @@ export default function TeacherHighlight(props) {
                     <div className='presentu-teacherhighlight-left' >
                         <h1>Sus Verbruggen</h1>
                         <p>{textsus}</p>
-                        <Link to="/page-2/">Meer</Link>
+                        <Link to="/docenten">Meer</Link>
                     </div>
                     <div className='presentu-teacherhighlight-right' >
                         <h1>Maarten van den Berg</h1>
                         <p>{textmaarten}</p>
-                        <Link to="/page-2/">Meer</Link>
+                        <Link to="/docenten">Meer</Link>
                     </div>
                 </div>
             </div>

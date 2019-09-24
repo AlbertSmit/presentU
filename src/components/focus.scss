@@ -1,5 +1,23 @@
 @import '../utilities/variables.scss';
 
+.more {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: $colors-pink;
+    color: $colors-red;
+    padding: 2rem;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        h6 {
+            margin: 0;
+        }
+    }
+}
+
 .presentu-focus-u-decorator{
     display: flex;
     flex-direction: column;
@@ -27,7 +45,7 @@
 
 .presentu-focus-items{
     display: flex;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0 3rem 0;
     align-self: center;
     flex-wrap: wrap;
     flex: 6;

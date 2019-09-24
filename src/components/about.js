@@ -4,7 +4,7 @@ import './about.scss'
 
 export default function About(props) {
     return (
-        <div className='presentu-fn-comp-about' >
+        <div id='wie' className='presentu-fn-comp-about' >
             <div className='content-width-rule fc'>
                 <div className='about-text-splitter' >
                     <div className='about-text-who' >

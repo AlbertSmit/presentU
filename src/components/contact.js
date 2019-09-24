@@ -23,7 +23,7 @@ export default function Contact(props) {
     }
 
     return (
-        <div className='presentu-fn-comp-contact' >
+        <div id='contact' className='presentu-fn-comp-contact' >
             <div className='content-width-rule fc'>
                 <h2 className='text-pink' >
                     {props.data.prismicFocus.data.contact.text}
@@ -93,6 +93,10 @@ export default function Contact(props) {
                         </form>
                     )}
                 />
+                {/*  */}
+                <h1>Social</h1>
+                <p>fb</p>
+                <p>insta</p>
             </div>
         </div>
     )
