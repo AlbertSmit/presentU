@@ -1,56 +1,44 @@
-require('dotenv').config()
+require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `presentU`,
-    description: `Presenteren vanuit theatervorm.`,
-    author: `@albertsmit`,
+    title: 'presentU',
+    description: 'Presenteren vanuit theatervorm.',
+    author: '@albertsmit',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: 'gatsby-source-sanity',
-      options: {
-        projectId: '10khklw1',
-        dataset: 'presentu',
-        // To enable preview of drafts, copy .env-example into .env,
-        // and add a token with read permissions
-        token: process.env.SANITY_TOKEN,
-        watchMode: true,
-        overlayDrafts: true
-      }
     },
     {
       resolve: 'gatsby-source-prismic',
       options: {
         // The name of your prismic.io repository. This is required.
         repositoryName: 'presentu-dev',
-   
+
         // An API access token to your prismic.io repository. This is required.
         accessToken: 'MC5YUGp5cUJJQUFOY3VhbFZ6.OO-_ve-_ve-_vSTvv71NVO-_ve-_vRpZJF9SJe-_ve-_ve-_vQcGOu-_ve-_ve-_vQTvv73vv73vv71N77-9Xg',
-   
+
         // Set a link resolver function used to process links in your content.
         // Fields with rich text formatting or links to internal content use this
         // function to generate the correct link URL.
@@ -58,17 +46,17 @@ module.exports = {
         // provided to the function, as seen below. This allows you to use
         // different link resolver logic for each field if necessary.
         // See: https://prismic.io/docs/javascript/query-the-api/link-resolving
-        linkResolver: ({ node, key, value }) => doc => {
+        linkResolver: ({ node, key, value }) => (doc) => {
           // Your link resolver
         },
-   
+
         // Set a list of links to fetch and be made available in your link
         // resolver function.
         // See: https://prismic.io/docs/javascript/query-the-api/fetch-linked-document-fields
         fetchLinks: [
           // Your list of links
         ],
-   
+
         // Set an HTML serializer function used to process formatted content.
         // Fields with rich text formatting use this function to generate the
         // correct HTML.
@@ -84,25 +72,25 @@ module.exports = {
         ) => {
           // Your HTML serializer
         },
-   
+
         // Provide an object of Prismic custom type JSON schemas to load into
         // Gatsby. Providing the schemas allows you to query for fields present in
         // your custom types even if they are unused in your documents.
         schemas: {
           // Your custom types mapped to schemas
         },
-  
+
         // See: https://prismic.io/docs/javascript/query-the-api/query-by-language
         lang: '*',
-   
+
         // Set a function to determine if images are downloaded locally
         shouldNormalizeImage: ({ node, key, value }) => {
           // Return true to normalize the image or false to skip.
         },
       },
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
