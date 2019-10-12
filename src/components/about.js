@@ -13,10 +13,11 @@ export default function About(props) {
                 </div>
                 <div className='about-text-splitter' >
                     <div className='about-text-block' >
-                        <p>
-                            {props.data.prismicFocus.data.over_content.text}
-                        </p>
-                        <Link to="/page-2/">Meer</Link>
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: props.data.prismicFocus.data.over_content.html,
+                            }}
+                        />
                     </div>
                 </div>
             </div>
