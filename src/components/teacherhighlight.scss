@@ -1,11 +1,13 @@
 @import '../utilities/variables.scss';
 
-.presentu-teacherhighlight-teachers {
+.teachers {
+  padding-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   min-height: auto;
 
   h1 {
+    padding-top: 2rem;
     font-weight: 600;
     font-size: 2.5rem;
     color: $colors-red;
@@ -23,11 +25,11 @@
   max-width: 50%;
   flex: 1 45%;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 2rem;
   margin: 0 auto;
 
   .image {
-    margin-bottom: -5rem;
+    margin-bottom: -6rem;
     margin-left: 2rem;
 
     img {
@@ -42,7 +44,7 @@
     background: linear-gradient(
       to bottom,
       rgba(197, 208, 210, 0),
-      $colors-baby 10%
+      $colors-baby 15%
     );
     height: auto;
   }
