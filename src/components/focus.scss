@@ -1,99 +1,125 @@
 @import '../utilities/variables.scss';
 
 .more {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: $colors-pink;
-    color: $colors-red;
-    padding: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: $colors-pink;
+  color: $colors-red;
+  padding: 1rem;
 
-    a {
-        text-decoration: none;
-        color: inherit;
+  a {
+    text-decoration: none;
+    color: inherit;
 
-        h6 {
-            margin: 0;
-        }
+    h4 {
+      margin: 0;
     }
+  }
+
+  .outline {
+    border: 2px solid white;
+    padding: 1rem 6rem;
+    border-radius: 10px;
+  }
 }
 
-.presentu-focus-u-decorator{
-    display: flex;
-    flex-direction: column;
+.presentu-focus-u-decorator {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0 3rem 0 3rem;
+  flex: 2;
+
+  h1 {
+    color: $colors-pink;
+    font-size: 5rem;
+    padding: 1rem;
+
+    animation: hover 3s infinite alternate-reverse;
+  }
+
+  h1:nth-child(1n) {
+    align-self: flex-start;
+    font-family: $system-font;
+    font-weight: 700;
+    animation-delay: 0.3s;
+  }
+  h1:nth-child(2n) {
+    align-self: flex-end;
+    font-family: $secondary-font;
+    font-weight: 500;
+    animation-delay: 2s;
+  }
+  h1:nth-child(3n) {
+    align-self: flex-start;
+    font-family: $primary-font;
+    font-weight: 500;
+    animation-delay: 0.6s;
+  }
+  h1:nth-child(4n) {
     align-self: center;
-    padding: 0 3rem 0 3rem;
-    flex: 2;
-    
-        h1 {
-        color: $colors-pink;
-        font-size: 5rem;
-        padding: 1rem;
-
-        animation: hover 3s infinite alternate-reverse;
-    }
-
-    h1:nth-child(1n) { align-self: flex-start; font-family: $system-font; font-weight: 700; animation-delay: 0.3s; }
-    h1:nth-child(2n) { align-self: flex-end; font-family: $secondary-font; font-weight: 500; animation-delay: 2s; }
-    h1:nth-child(3n) { align-self: flex-start; font-family: $primary-font; font-weight: 500; animation-delay: 0.6s; }
-    h1:nth-child(4n) { align-self: center; font-family: $secondary-font; font-weight: 400; animation-delay: 1.4s;  }
+    font-family: $secondary-font;
+    font-weight: 400;
+    animation-delay: 1.4s;
+  }
 }
 
 .presentu-focus-u-decorator + .presentu-focus-items {
-    margin-left: 8%;
+  margin-left: 8%;
 }
 
-.presentu-focus-items{
+.presentu-focus-items {
+  display: flex;
+  padding: 4rem 0 3rem 0;
+  align-self: center;
+  flex-wrap: wrap;
+  flex: 6;
+
+  .presentu-focus-row {
     display: flex;
-    padding: 4rem 0 3rem 0;
-    align-self: center;
-    flex-wrap: wrap;
-    flex: 6;
+    flex-direction: row;
+    flex: 1 0 51%;
 
-    .presentu-focus-row {
-        display: flex;
-        flex-direction: row;
-        flex: 1 0 51%;
+    .presentu-focus-column {
+      background-color: none;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding-top: 3rem;
+      transition: 1s ease-out;
 
-        .presentu-focus-column {
-            background-color: none;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            padding-top: 3rem;
-            transition: 1s ease-out;
+      .focus-title {
+        color: $colors-azure;
+        font-family: $secondary-font;
+        font-weight: 500;
+        font-size: 1.7rem;
+      }
 
-            .focus-title {
-                color: $colors-azure;
-                font-family: $secondary-font;
-                font-weight: 500;
-                font-size: 1.7rem;
-            }
+      img {
+        margin: 0 0 0.8rem 0;
+      }
 
-            img {
-                margin: 0 0 0.8rem 0;
-            }
-
-            p {
-                color: $colors-gray;
-                padding-right: 3rem;
-            }
-        }
-
-        .presentu-focus-column:hover {
-            transition: 0.5s ease;
-            transform: translateX(-10px);
-        }
+      p {
+        color: $colors-gray;
+        padding-right: 3rem;
+      }
     }
+
+    .presentu-focus-column:hover {
+      transition: 0.5s ease;
+      transform: translateX(-10px);
+    }
+  }
 }
 
 @keyframes hover {
-    from { 
-        opacity: 0.8; 
-        transform: translateY(0px);
-    }
-    to { 
-        opacity: 1; 
-        transform: translateY(5px);
-    }
+  from {
+    opacity: 0.8;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(5px);
+  }
 }

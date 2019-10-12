@@ -44,12 +44,14 @@ export const query = graphql`
       }
       contact_content {
         text
+        html
       }
       fysiek {
         text
       }
       fysiek_content {
         text
+        html
       }
       koptekst {
         text
@@ -59,9 +61,11 @@ export const query = graphql`
       }
       over_content {
         text
+        html
       }
       resultaat_content {
         text
+        html
       }
       resultaatgericht {
         text
@@ -71,24 +75,28 @@ export const query = graphql`
       }
       stem_content {
         text
+        html
       }
       waarom {
         text
       }
       waarom_content {
         text
+        html
       }
       wat {
         text
       }
       wat_content {
         text
+        html
       }
       wie {
         text
       }
       wie_content {
         text
+        html
       }
     }
   }

@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactTooltip from 'react-tooltip'
 import './logowall.scss'
 
 const logoSources = [
@@ -21,7 +22,8 @@ export default function LogoWall(props) {
                     <h1>Tevreden klanten</h1>
                 </div>
                 <div className='logowall-collection'>
-                    {logoSources.map(i => <div className='logowall-item'><img src={i} /></div>)}
+                    <ReactTooltip effect="solid" />
+                    {logoSources.map(i => <div className='logowall-item' data-tip="hello world"><img src={i} /></div>)}
                 </div>
             </div>
         </div>

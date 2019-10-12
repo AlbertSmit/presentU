@@ -21,9 +21,8 @@ export default function Footer() {
                     </div>
                     <div>
                         <h5>Adres</h5>
-                        <p>Dingesgebouw</p>
-                        <p>Somestreet 34-a</p>
-                        <p>7777 AB  Utrecht</p>
+                        <p>Van Brakelstraat 11 BS</p>
+                        <p>3572 XP  Utrecht</p>
                     </div>
                 </div>
             </div>
