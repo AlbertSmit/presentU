@@ -32,10 +32,12 @@
 
     img {
       max-height: 10rem;
+      transition: 1s ease-out;
     }
   }
 
   .body {
+    z-index: 2;
     background-color: $colors-baby;
     background: linear-gradient(
       to bottom,
@@ -43,5 +45,13 @@
       $colors-baby 10%
     );
     height: auto;
+  }
+}
+
+.highlight:hover {
+  img {
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(10px);
   }
 }
