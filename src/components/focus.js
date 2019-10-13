@@ -11,7 +11,7 @@ export default function Focus(props) {
     return (
         <div id-='focus' className='presentu-fn-comp-focus' >
             <div className='content-width-rule fr'>
-                <div className='presentu-focus-u-decorator' >
+                <div className='decorator' >
                     <h1>U</h1>
                     <h1>U</h1>
                     <h1>U</h1>

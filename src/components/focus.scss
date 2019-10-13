@@ -24,7 +24,7 @@
   }
 }
 
-.presentu-focus-u-decorator {
+.decorator {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -65,7 +65,7 @@
   }
 }
 
-.presentu-focus-u-decorator + .presentu-focus-items {
+.decorator + .presentu-focus-items {
   margin-left: 8%;
 }
 
