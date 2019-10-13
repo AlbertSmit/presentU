@@ -21,9 +21,17 @@ export default function LogoWall(props) {
                 <div className='logowall-hero-text'>
                     <h1>Tevreden klanten</h1>
                 </div>
-                <div className='logowall-collection'>
-                    <ReactTooltip effect="solid" />
-                    {logoSources.map(i => <div className='logowall-item' data-tip="hello world"><img src={i} /></div>)}
+                <div id='collection' className='logowall-collection'>
+                    <ReactTooltip effect="solid" className='pU-tip' html='true'/>
+                    {props.data.allPrismicClient.edges.map(i => <div 
+                        key={i.node.data.name.text} 
+                        className='logowall-item' 
+                        id='entry'
+                        ><img 
+                            data-tip={i.node.data.testimonial.html} 
+                            src={i.node.data.logo.url} 
+                            alt={i.node.data.name.text}/></div>)}
+                    {console.log(props)}
                 </div>
             </div>
         </div>

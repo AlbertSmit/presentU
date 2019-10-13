@@ -34,7 +34,26 @@ const IndexPage = ({data}) => (
 
 export const query = graphql`
   query {
-    prismicFocus {
+    allPrismicClient {
+    edges {
+      node {
+        id
+        data {
+          logo {
+            url
+          }
+          name {
+            text
+          }
+          testimonial {
+            html
+            text
+          }
+        }
+      }
+    }
+  }
+  prismicFocus {
     data {
       broodtekst {
         text
