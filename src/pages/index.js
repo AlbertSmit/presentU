@@ -34,7 +34,28 @@ const IndexPage = ({data}) => (
 
 export const query = graphql`
   query {
-    allPrismicClient {
+  allPrismicTeacher {
+    edges {
+      node {
+        data {
+          image {
+            url
+            alt
+          }
+          mailto {
+            text
+          }
+          name {
+            text
+          }
+          story {
+            html
+          }
+        }
+      }
+    }
+  }
+  allPrismicClient {
     edges {
       node {
         id

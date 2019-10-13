@@ -29,7 +29,7 @@
   flex-direction: column;
   align-self: center;
   padding: 0 3rem 0 3rem;
-  flex: 2;
+  flex: 1.25;
 
   h1 {
     color: $colors-pink;
@@ -103,6 +103,22 @@
       p {
         color: $colors-gray;
         padding-right: 3rem;
+      }
+
+      .one {
+        filter: $filter-baby;
+      }
+
+      .two {
+        filter: $filter-azure;
+      }
+
+      .three {
+        filter: $filter-red;
+      }
+
+      .four {
+        filter: none;
       }
     }
 

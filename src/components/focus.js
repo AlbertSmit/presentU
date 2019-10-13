@@ -20,7 +20,7 @@ export default function Focus(props) {
                 <div className='presentu-focus-items' >
                     <div className='presentu-focus-row' >
                         <div className='presentu-focus-column' >
-                            <img src={s} alt='temp' height={size} width={size} />
+                            <img className='one' src={s} alt='temp' height={size} width={size} />
                             <h3 className='focus-title' >{props.data.prismicFocus.data.stem.text}</h3>
                             <div
                                 dangerouslySetInnerHTML={{
@@ -29,7 +29,7 @@ export default function Focus(props) {
                             />
                         </div>
                         <div className='presentu-focus-column' >
-                            <img src={m} alt='temp' height={size} width={size} />
+                            <img className='two' src={m} alt='temp' height={size} width={size} />
                             <h3 className='focus-title' >{props.data.prismicFocus.data.fysiek.text}</h3>
                             <div
                                 dangerouslySetInnerHTML={{
@@ -40,7 +40,7 @@ export default function Focus(props) {
                     </div>
                     <div className='presentu-focus-row' >
                         <div className='presentu-focus-column' >
-                            <img src={m} alt='temp' height={size} width={size} />
+                            <img className='three' src={m} alt='temp' height={size} width={size} />
                             <h3 className='focus-title' >{props.data.prismicFocus.data.contact.text}</h3>
                             <div
                                 dangerouslySetInnerHTML={{
@@ -49,7 +49,7 @@ export default function Focus(props) {
                             />
                         </div>
                         <div className='presentu-focus-column' >
-                            <img src={s} alt='temp' height={size} width={size} />
+                            <img className='four' src={s} alt='temp' height={size} width={size} />
                             <h3 className='focus-title' >{props.data.prismicFocus.data.resultaatgericht.text}</h3>
                             <div
                                 dangerouslySetInnerHTML={{

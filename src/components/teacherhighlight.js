@@ -11,52 +11,28 @@ export default function TeacherHighlight(props) {
     return (
         <div className='presentu-fn-comp-teacherhighlight'>
             <div className='content-width-rule'>
-                <div className='teachers'>
-                    <div className='highlight' >
-                        <div className='image'>
-                            <img src={temp2}/>
-                        </div>
-                        <div className='body'>
-                            <h1>Sus Verbruggen</h1>
-                            <p>{textsus}</p>
-                        </div>
-                    </div>
-                    <div className='highlight' >
-                        <div className='image'>
-                            <img src={imgtemp}/>
-                        </div>
-                        <div className='body'>
-                            <h1>Maarten van den Berg</h1>
-                            <p>{textmaarten}</p>
-                        </div>
-                    </div>
-                    <div className='highlight' >
-                        <div className='image'>
-                            <img src={imgtemp}/>
-                        </div>
-                        <div className='body'>
-                            <h1>Naam van Docent</h1>
-                            <p>{textmaarten}</p>
-                        </div>
-                    </div>
-                    <div className='highlight' >
-                        <div className='image'>
-                            <img src={imgtemp}/>
-                        </div>
-                        <div className='body'>
-                            <h1>Naam van Docent</h1>
-                            <p>{textmaarten}</p>
-                        </div>
-                    </div>
-                    <div className='highlight' >
-                        <div className='image'>
-                            <img src={imgtemp}/>
-                        </div>
-                        <div className='body'>
-                            <h1>Naam van Docent</h1>
-                            <p>{textmaarten}</p>
-                        </div>
-                    </div>
+                <div className='teachers' id='teachers'>
+                    
+                    {props.data.allPrismicTeacher.edges.map(i => {
+                        return(
+                            <div id='highlight' className='highlight' >
+                                <div className='image'>
+                                    <img 
+                                        alt={i.node.data.image.alt} 
+                                        src={i.node.data.image.url}/>
+                                </div>
+                                <div className='body'>
+                                    <h1>{i.node.data.name.text}</h1>
+                                    <div
+                                        dangerouslySetInnerHTML={{
+                                            __html: i.node.data.story.html,
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                        )
+                    })}
+                    
                 </div>
             </div>
         </div>
