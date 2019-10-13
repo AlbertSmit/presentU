@@ -2,7 +2,6 @@ import React from 'react'
 import './whowhatwhere.scss'
 
 export default function WhoWhatWhere(props) {
-    console.log(props.data.prismicFocus.data.waarom.text)
 
     return (
         <div className='presentu-fn-comp-whowhatwhere' >

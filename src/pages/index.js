@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from 'gatsby'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Landing from "../components/landing";
@@ -13,6 +12,7 @@ import Illustration from "../components/illustration";
 import TeacherHighlight from "../components/teacherhighlight";
 import LogoWall from "../components/logowall";
 import Contact from "../components/contact";
+import Approach from "../components/approach";
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -20,6 +20,7 @@ const IndexPage = ({data}) => (
     <Landing data={data}/>
     <About data={data}/>
     <WhoWhatWhere data={data}/>
+    <Approach />
     <Focus data={data}/>
     <Illustration data={data}/>
     <TeacherHighlight data={data}/>

@@ -1,0 +1,68 @@
+@import '../utilities/variables.scss';
+
+.presentu-approach-content {
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+  padding: 1rem 0 3rem 0;
+  // min-height: 35vh;
+
+  .presentu-approach-boxes {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    flex: 4;
+
+    .box {
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: $mildShadow;
+
+      h3 {
+        padding-top: 0.3rem;
+        opacity: 0.9;
+        padding-bottom: 1.3rem;
+        margin: 0;
+        font-weight: 400;
+      }
+
+      h5 {
+        color: $colors-pink;
+      }
+
+      ul {
+        color: $colors-white;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 0;
+          margin: 0.4rem 0;
+        }
+      }
+    }
+
+    .pre {
+      margin: 0;
+      padding: 1rem;
+      opacity: 0.3;
+      font-weight: 500;
+      color: $colors-black;
+      text-align: left;
+    }
+  }
+
+  .presentu-approach-spacer {
+    flex: 0.8;
+
+    .arrow {
+      text-align: center;
+      color: $colors-pink;
+      font-size: 1.5rem;
+      // font-weight: 400;
+      padding-top: 6rem;
+      margin: 0 auto;
+    }
+  }
+}
