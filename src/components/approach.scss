@@ -14,39 +14,65 @@
     flex: 4;
 
     .box {
+      background-color: $colors-azure;
       border-radius: 15px;
       padding: 1rem;
       box-shadow: $mildShadow;
+      z-index: 1;
 
       h3 {
         padding-top: 0.3rem;
         opacity: 0.9;
-        padding-bottom: 1.3rem;
+        padding-bottom: 0.5rem;
         margin: 0;
         font-weight: 400;
       }
+    }
+
+    .subbox {
+      background-color: none;
+      border-radius: 15px;
+      padding: 1rem;
+      z-index: 0;
+
+      .spacer {
+        height: 14rem;
+      }
 
       h5 {
-        color: $colors-pink;
+        padding-top: 2rem;
+        color: $colors-white;
+        opacity: 0.8;
       }
 
       ul {
-        color: $colors-white;
-        list-style-type: none;
+        color: $colors-baby;
+        opacity: 0.8;
         margin: 0;
         padding: 0;
+        list-style-type: none;
 
         li {
           padding: 0;
           margin: 0.4rem 0;
         }
       }
+
+      ul li::before {
+        content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $colors-baby; /* Change the color */
+        opacity: 0.4;
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
     }
 
     .pre {
       margin: 0;
       padding: 1rem;
-      opacity: 0.3;
+      opacity: 0.5;
       font-weight: 500;
       color: $colors-black;
       text-align: left;
@@ -58,7 +84,7 @@
 
     .arrow {
       text-align: center;
-      color: $colors-pink;
+      color: $colors-baby;
       font-size: 1.5rem;
       // font-weight: 400;
       padding-top: 6rem;
