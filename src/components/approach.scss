@@ -13,8 +13,20 @@
     flex-direction: column;
     flex: 4;
 
+    .image {
+      z-index: 0;
+      max-height: 6rem;
+      align-self: flex-end;
+      padding: 1rem;
+      margin-right: 1rem;
+
+      img {
+        max-height: 10rem;
+      }
+    }
+
     .box {
-      background-color: $colors-azure;
+      background-color: $colors-red;
       border-radius: 15px;
       padding: 1rem;
       box-shadow: $mildShadow;
@@ -41,12 +53,12 @@
 
       h5 {
         padding-top: 2rem;
-        color: $colors-white;
+        color: $colors-black;
         opacity: 0.8;
       }
 
       ul {
-        color: $colors-baby;
+        color: $colors-white;
         opacity: 0.8;
         margin: 0;
         padding: 0;
@@ -60,7 +72,7 @@
 
       ul li::before {
         content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: $colors-baby; /* Change the color */
+        color: $colors-white; /* Change the color */
         opacity: 0.4;
         font-weight: bold; /* If you want it to be bold */
         display: inline-block; /* Needed to add space between the bullet and the text */
@@ -91,4 +103,21 @@
       margin: 0 auto;
     }
   }
+}
+
+#skills > #column {
+  -webkit-transition: 0.5s;
+  transition: ease 0.5s;
+}
+
+/* fade ALL out on parent hover */
+#skills:hover > #column {
+  opacity: 0.5;
+  transform: translateY(0px);
+}
+
+/* fade ONE in on hover */
+#skills > #column:hover {
+  opacity: 1;
+  transform: translateY(-5px);
 }

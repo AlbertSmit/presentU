@@ -1,14 +1,17 @@
 import React from 'react'
 import './approach.scss'
 
+const imgtemp = "https://presentu.nl/images/Middel-14d.png";
+
 export default function Approach(props) {
 
     return (
         <div className='presentu-fn-comp-approach' >
             <div className='content-width-rule fc'>
-                <div className='presentu-approach-content' >
+                <div id='skills' className='presentu-approach-content' >
 
-                    <div className='presentu-approach-boxes' >
+                    <div id='column' className='presentu-approach-boxes' >                       
+                        <div className='image'><img src={imgtemp}/></div>
                         <h3 className='pre'>1</h3>
                         <div className='box'>
                             <h3 className='text-white'>Basisvaardigheden</h3>
@@ -37,7 +40,8 @@ export default function Approach(props) {
                         <h3 className='arrow'>→</h3>
                     </div>
 
-                    <div className='presentu-approach-boxes' >
+                    <div id='column' className='presentu-approach-boxes' >
+                        <div className='image'><img src={imgtemp}/></div>
                         <h3 className='pre'>2</h3>
                         <div className='box'>
                             <h3 className='text-white'>Story skills</h3>
@@ -64,7 +68,8 @@ export default function Approach(props) {
                         <h3 className='arrow'>→</h3>
                     </div>
 
-                    <div className='presentu-approach-boxes' >
+                    <div id='column' className='presentu-approach-boxes' >
+                        <div className='image'><img src={imgtemp}/></div>
                         <h3 className='pre'>3</h3>
                         <div className='box'>
                             <h3 className='text-white'>Expertvaardigheden</h3>
