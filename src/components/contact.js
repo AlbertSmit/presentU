@@ -26,7 +26,7 @@ export default function Contact(props) {
         <div id='contact' className='presentu-fn-comp-contact' >
             <div className='content-width-rule fc'>
                 <h2 className='text-pink' >
-                    {props.data.prismicFocus.data.contact.text}
+                    <div className='html' dangerouslySetInnerHTML={{ __html: props.data.prismicFocus.data.content.html }}/>
                 </h2>
                 <Form
                     id="invisible-recaptcha-form"
@@ -93,10 +93,6 @@ export default function Contact(props) {
                         </form>
                     )}
                 />
-                {/*  */}
-                <h1>Social</h1>
-                <p>fb</p>
-                <p>insta</p>
             </div>
         </div>
     )

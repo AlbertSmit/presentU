@@ -1,6 +1,7 @@
 @import '../utilities/variables.scss';
 
 .footer {
+  padding: 1.5rem 0 3rem 0;
   display: flex;
   width: 100%;
 
@@ -10,14 +11,15 @@
     max-width: 80%;
 
     h5 {
-      color: $colors-white;
+      color: $colors-black;
       font-size: 0.75rem;
     }
 
     a,
     p {
       display: block;
-      color: $colors-pink;
+      color: $colors-black;
+      opacity: 0.8;
       font-family: $system-font;
       margin: 0;
       text-decoration: none;

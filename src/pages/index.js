@@ -79,6 +79,9 @@ export const query = graphql`
   }
   prismicFocus {
     data {
+      content {
+        html
+      }
       broodtekst {
         text
       }
