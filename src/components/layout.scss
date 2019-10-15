@@ -637,6 +637,7 @@ pre tt:after {
 .presentu-fn-comp-whowhatwhere,
 .presentu-fn-comp-approach,
 .presentu-fn-comp-focus,
+.presentu-fn-comp-video,
 .presentu-fn-comp-illustration,
 .presentu-fn-comp-teacherhighlight,
 .presentu-fn-comp-logowall,
@@ -749,6 +750,10 @@ pre tt:after {
 
 .presentu-fn-comp-contact {
   background-color: $colors-red;
+}
+
+.presentu-fn-comp-video {
+  background-color: $colors-baby;
 }
 
 .presentu-fn-comp-footer {

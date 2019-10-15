@@ -13,11 +13,13 @@ import TeacherHighlight from "../components/teacherhighlight";
 import LogoWall from "../components/logowall";
 import Contact from "../components/contact";
 import Approach from "../components/approach";
+import Video from "../components/video";
 
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Landing data={data}/>
+    <Video />
     <About data={data}/>
     <WhoWhatWhere data={data}/>
     <Approach />

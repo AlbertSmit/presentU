@@ -16,13 +16,15 @@ export default function Footer() {
                     </div>                    
                     <div>
                         <h5>Social</h5>
-                        <p>Facebook</p>
-                        <p>Instagram</p>
+                        <a href="https://www.facebook.com/presentu/">Facebook</a>
+                        <a href="https://www.instagram.com/presentu_training/">Instagram</a>
                     </div>
                     <div>
-                        <h5>Adres</h5>
-                        <p>Van Brakelstraat 11 BS</p>
-                        <p>3572 XP  Utrecht</p>
+                        <address>
+                            <h5>Adres</h5>
+                            <p>Van Brakelstraat 11 BS</p>
+                            <p>3572 XP  Utrecht</p>
+                        </address>
                     </div>
                 </div>
             </div>

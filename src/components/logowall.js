@@ -2,18 +2,6 @@ import React from 'react'
 import ReactTooltip from 'react-tooltip'
 import './logowall.scss'
 
-const logoSources = [
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png',
-    'http://pngimg.com/uploads/google/google_PNG19644.png'
-]
-
 export default function LogoWall(props) {
     return (
         <div className='presentu-fn-comp-logowall' >
@@ -30,8 +18,9 @@ export default function LogoWall(props) {
                         ><img 
                             data-tip={i.node.data.testimonial.html} 
                             src={i.node.data.logo.url} 
-                            alt={i.node.data.name.text}/></div>)}
-                    {console.log(props)}
+                            alt={i.node.data.name.text}
+                        />
+                    </div>)}
                 </div>
             </div>
         </div>

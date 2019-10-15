@@ -1,0 +1,17 @@
+@import '../utilities/variables.scss';
+
+.video {
+  background-color: none;
+  height: auto;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  margin-top: -3rem;
+}
+
+.source {
+  width: 50vw;
+  height: 40vw;
+  max-height: 20rem;
+  background-color: none;
+  box-shadow: $defaultShadow;
+}
