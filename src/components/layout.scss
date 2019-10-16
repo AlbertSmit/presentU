@@ -757,7 +757,7 @@ pre tt:after {
 }
 
 .presentu-fn-comp-footer {
-  background-color: $colors-white;
+  background-color: $colors-red;
 }
 
 .text-white {
@@ -774,4 +774,10 @@ pre tt:after {
 
 .text-pink {
   color: #fbd4cd;
+}
+
+//fonts
+@font-face {
+  font-family: 'KlikScript';
+  src: url('../static/fonts/KlikScript-Regular.woff') format('woff');
 }

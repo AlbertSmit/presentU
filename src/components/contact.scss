@@ -40,18 +40,25 @@ form {
 
 .contact-button {
   padding-top: 1rem;
-  align-self: center;
+  padding-right: 4rem;
+  align-self: flex-end;
 
   button {
-    color: $colors-black;
-    background-color: $colors-pink;
-    border-radius: 5px;
+    color: $colors-white;
     border: 0;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.8rem;
     cursor: pointer;
+
+    margin-top: 17px;
+    margin-right: 27px;
+    padding: 16px 28px 39px 36px;
+    background-color: transparent;
+    background-image: url('../static/images/button.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: KlikScript, sans-serif;
+    font-size: 2rem;
+    line-height: 1rem;
   }
 }
 
@@ -72,4 +79,11 @@ form {
   font-size: 2rem;
   font-weight: 400;
   line-height: 3rem;
+}
+
+//fonts
+@font-face {
+  font-family: 'KlikScript';
+  src: url('../static/fonts/KlikScript-Regular.woff') format('woff')
+    url('../static/fonts/KlikScript-Regular.otf') format('opentype');
 }
