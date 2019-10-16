@@ -60,9 +60,10 @@ export default function Focus(props) {
                     </div>
                 </div>
             </div>
-            <div className='more'>
+            {/* Optional path to show more about werkwijze; commented out as it is redundant */}
+            {/* <div className='more'>
                 <Link to='/werkwijze'><h4 className='outline'>meer over onze werkwijze →</h4></Link>
-            </div>
+            </div> */}
         </div>
     )
 }

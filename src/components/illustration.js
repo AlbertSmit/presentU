@@ -10,6 +10,9 @@ export default function Illustration() {
             <div className='giant-u-container' >
                 {/* <h1>U</h1> */}
                 <img src={g}></img>
+                <div className='speech'> 
+                    <h2>waar laat ik mijn handen?</h2>
+                </div>
             </div>
         </div>
     )
