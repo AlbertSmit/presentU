@@ -1,6 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 import './about.scss'
+
+const x = "https://presentu.nl/images/Middel-3dff222.png";
 
 export default function About(props) {
     return (
@@ -9,6 +11,9 @@ export default function About(props) {
                 <div className='about-text-splitter' >
                     <div className='about-text-who' >
                         <h1>{props.data.prismicFocus.data.over.text}</h1>
+                    </div>
+                    <div className='illustration'>
+                        <img src={x}/>
                     </div>
                 </div>
                 <div className='about-text-splitter' >
