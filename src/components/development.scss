@@ -1,0 +1,55 @@
+@import '../utilities/variables.scss';
+
+.presentu-development-content {
+  display: flex;
+  padding: 1rem 0 3rem 0;
+  // min-height: 35vh;
+
+  .presentu-development-boxes {
+    display: flex;
+    margin-top: 1rem;
+
+    .box {
+      background-color: $colors-white;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      box-shadow: $mildShadow;
+      z-index: 1;
+      vertical-align: middle;
+      align-items: center;
+
+      h3 {
+        padding-top: 0.3rem;
+        opacity: 0.9;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        font-weight: 400;
+      }
+
+      .flex-divider {
+        padding: 1rem;
+        vertical-align: middle;
+        justify-content: space-evenly;
+        margin: 0 1rem;
+
+        h4 {
+          color: $colors-black;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: black;
+          opacity: 0.7;
+          margin: 0;
+        }
+
+        img {
+          max-width: 80px;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}

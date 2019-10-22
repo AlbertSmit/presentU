@@ -13,6 +13,7 @@ import TeacherHighlight from "../components/teacherhighlight";
 import LogoWall from "../components/logowall";
 import Contact from "../components/contact";
 import Approach from "../components/approach";
+import Development from "../components/development";
 import Video from "../components/video";
 
 const IndexPage = ({data}) => (
@@ -23,6 +24,7 @@ const IndexPage = ({data}) => (
     <About data={data}/>
     <WhoWhatWhere data={data}/>
     <Approach />
+    <Development />
     <Focus data={data}/>
     <Illustration data={data}/>
     <TeacherHighlight data={data}/>

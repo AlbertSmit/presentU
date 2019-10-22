@@ -92,7 +92,6 @@ export default function Approach(props) {
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
