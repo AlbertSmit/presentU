@@ -53,3 +53,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .presentu-development-content .presentu-development-boxes .box {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}

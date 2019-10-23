@@ -1,25 +1,38 @@
 @import '../utilities/variables';
 
 header {
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
-        h1 {
-            flex: 1;
+    h1 {
+      flex: 1;
 
-            .link {
-                color: $colors-black;
-                text-decoration: none;
-            }
+      .link {
+        color: $colors-black;
+        text-decoration: none;
+      }
 
-            img{
-                max-width: 50%;
-                align-self: center;
-                justify-self: center;
-                margin: 0;
-            }
-        }
+      img {
+        max-width: 50%;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+      }
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    .header {
+      flex-direction: column;
+
+      h1 img {
+        max-width: 30%;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
 }

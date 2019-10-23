@@ -129,6 +129,23 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .decorator {
+    display: none;
+  }
+
+  .presentu-focus-items {
+    flex-direction: column;
+
+    .presentu-focus-row {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 200;
+      line-height: 1.5rem;
+    }
+  }
+}
+
 @keyframes hover {
   from {
     opacity: 0.8;

@@ -1,22 +1,30 @@
 .presentu-whowhatwhere-content {
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+  padding: 1rem 0 3rem 0;
+  // min-height: 35vh;
+
+  .presentu-whowhatwhere-boxes {
     display: flex;
-    flex-direction: row;
+    margin-top: 4rem;
+    flex-direction: column;
     flex: 4;
-    padding: 1rem 0 3rem 0;
-    // min-height: 35vh;
 
-    .presentu-whowhatwhere-boxes {
-        display: flex;
-        margin-top: 4rem;
-        flex-direction: column;
-        flex: 4;
-
-        h1 {
-            padding-bottom: 1.3rem;
-        }
+    h1 {
+      padding-bottom: 1.3rem;
     }
+  }
 
-    .presentu-whowhatwhere-spacer{
-        flex: 0.8;
-    }
+  .presentu-whowhatwhere-spacer {
+    flex: 0.8;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .presentu-whowhatwhere-content {
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
 }

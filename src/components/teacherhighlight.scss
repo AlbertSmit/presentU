@@ -72,3 +72,15 @@
 #teachers > #highlight:hover {
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .teachers {
+    flex-direction: column;
+  }
+
+  .highlight {
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}

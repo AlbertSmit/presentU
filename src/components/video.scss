@@ -15,3 +15,15 @@
   background-color: none;
   box-shadow: $defaultShadow;
 }
+
+@media only screen and (max-width: 600px) {
+  .video {
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .source {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,53 +1,80 @@
 @import '../utilities/variables.scss';
 
 .presentu-landing-hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 4;
-    min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 4;
+  min-height: 80vh;
 
-    h1 {
-        padding: 0 0 2rem 1rem;
-        font-family: $secondary-font;
-        font-size: 3rem;
-        font-weight: 500;
-        line-height: 3.5rem;
-        color: $colors-black;
-        animation: appear 2s ease;
+  h1 {
+    padding: 0 0 2rem 1rem;
+    font-family: $secondary-font;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    color: $colors-black;
+    animation: appear 2s ease;
 
-        span {
-            img {
-                max-width: 2rem;
-                margin: 0;
-            }
-        }
+    span {
+      img {
+        max-width: 2rem;
+        margin: 0;
+      }
     }
+  }
 
-    p {
-        padding: 0 0 0 1rem;
-        animation: appear 2s ease;
-        animation-delay: 1s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-    }
+  p {
+    padding: 0 0 0 1rem;
+    animation: appear 2s ease;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
 }
 
 .presentu-landing-hero-image {
-    display: flex;
-    flex: 2;
+  display: flex;
+  flex: 2;
 
-    img {
-        max-width: 90%;
-        align-self: center
-    }
+  img {
+    max-width: 90%;
+    align-self: center;
+  }
 }
 
 .presentu-landing-hero-image + .presentu-landing-hero-content {
-    margin-left: 10%;
+  margin-left: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .presentu-landing-hero-image + .presentu-landing-hero-content {
+    margin-left: 0%;
+  }
+
+  .presentu-landing-hero-image {
+    display: none;
+  }
+
+  .presentu-landing-hero-content {
+    h1 {
+      padding: 0;
+      font-size: 2.4 rem;
+    }
+
+    p {
+      padding: 0;
+    }
+  }
 }
 
 @keyframes appear {
-    from { opacity: 0; transform: translateX(20px) }
-    to { opacity: 1; transform: translateX(0px)}
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

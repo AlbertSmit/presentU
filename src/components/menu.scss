@@ -1,27 +1,48 @@
 @import '../utilities/variables.scss';
 
 .menu {
+  display: flex;
+  flex: 2;
+  align-self: center;
+  justify-content: flex-end;
+
+  h6 {
+    font-display: $system-font;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-left: 1.5rem;
+    margin: 0;
+  }
+
+  .slogan {
+    color: $colors-black;
+    font-weight: 600;
+    padding-right: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
     display: flex;
-    flex: 2;
-    align-self: center;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-items: space-evenly;
+    flex: 1;
 
     h6 {
-        font-display: $system-font;
-        font-size: 0.7rem;
-        font-weight: 400;
-        padding-left: 1.5rem;
-        margin: 0;
-    }
-    
-    .slogan {
-        color: $colors-black;
-        font-weight: 600;
-        padding-right: 2rem;
+      justify-self: space-evenly;
+      padding-left: 0;
+      padding-right: 1.5rem;
+      flex: 1;
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
+    .slogan {
+      display: none;
     }
+  }
 }

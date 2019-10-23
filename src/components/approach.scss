@@ -121,3 +121,17 @@
   opacity: 1;
   transform: translateY(-5px);
 }
+
+@media only screen and (max-width: 600px) {
+  .presentu-approach-content {
+    flex-direction: column;
+
+    .presentu-approach-boxes {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .presentu-approach-spacer {
+    display: none;
+  }
+}
