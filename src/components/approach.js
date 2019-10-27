@@ -26,13 +26,15 @@ export default function Approach(props) {
                                     <li>Ontdek je stijl</li>
                                 </ul>
                             </div>
-                            <h5>Aan de hand van</h5>
-                            <ul className='what'>
-                                <li>0-meting</li>
-                                <li>Persoonlijk ontwikkelplan</li>
-                                <li>Basistraining presentatie</li>
-                                <li>Uitgebreide feedback van trainers en deelnemers</li>
-                            </ul>
+                            <div className='spacer'>
+                                <h5>Aan de hand van</h5>
+                                <ul>
+                                    <li>0-meting</li>
+                                    <li>Persoonlijk ontwikkelplan</li>
+                                    <li>Basistraining presentatie</li>
+                                    <li>Uitgebreide feedback van trainers en deelnemers</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -55,12 +57,14 @@ export default function Approach(props) {
                                     <li>Schrijven voor verschillend publiek</li>
                                 </ul>
                             </div>
-                            <h5>Aan de hand van</h5>
-                            <ul className='what'>
-                                <li>Story-telling training I & II</li>
-                                <li>Proces van schaven en verbeteren</li>
-                                <li>Leren wat werkt en niet werkt voor jou</li>
-                            </ul>
+                            <div className='spacer'>
+                                <h5>Aan de hand van</h5>
+                                <ul>
+                                    <li>Story-telling training I & II</li>
+                                    <li>Proces van schaven en verbeteren</li>
+                                    <li>Leren wat werkt en niet werkt voor jou</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -77,19 +81,21 @@ export default function Approach(props) {
                         <div className='subbox'>
                             <div className='spacer'>
                                 <h5>Wat je leert</h5>
-                                <ul className='what'>
+                                <ul>
                                     <li>Oefenen voor groepen</li>
                                     <li>Uitgebreide aandacht voor jouw focuspunten bij presenteren</li>
                                     <li>Integreren van vaardigheden uit I & II</li>
                                 </ul>
                             </div>
-                            <h5>Aan de hand van</h5>
-                            <ul className='what'>
-                                <li>0-meting</li>
-                                <li>Persoonlijk ontwikkelplan</li>
-                                <li>Basistraining presentatie</li>
-                                <li>Uitgebreide feedback van trainers en deelnemers</li>
-                            </ul>
+                            <div className='spacer'>
+                                <h5>Aan de hand van</h5>
+                                <ul>
+                                    <li>0-meting</li>
+                                    <li>Persoonlijk ontwikkelplan</li>
+                                    <li>Basistraining presentatie</li>
+                                    <li>Uitgebreide feedback van trainers en deelnemers</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

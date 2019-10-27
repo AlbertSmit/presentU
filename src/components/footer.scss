@@ -31,3 +31,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+      h5,
+      a,
+      p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .year {
+    display: none;
+  }
+
+  .extra {
+    display: none;
+  }
+}

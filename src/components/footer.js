@@ -7,10 +7,10 @@ export default function Footer() {
         <div className='presentu-fn-comp-footer' >
             <div className='content-width-rule fr'>
                 <div className='footer'>
-                    <div>
+                    <div className='year'>
                         <h5>PresentU — {new Date().getFullYear()}.</h5>
                     </div>
-                    <div>
+                    <div className='extra'>
                         {/* <h5></h5>
                         <p></p> */}
                     </div>                    
