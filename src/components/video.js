@@ -8,7 +8,7 @@ export default function Video(props) {
             <div className='content-width-rule fc' >
                 <div className='video'>
                     <VideoSource
-                        videoSrcURL="https://youtu.be/FJbUTPHhNVg"
+                        videoSrcURL="https://www.youtube.com/embed/FJbUTPHhNVg"
                         videoTitle="PresentU Promo"
                     />
                 </div>
