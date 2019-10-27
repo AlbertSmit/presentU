@@ -9,7 +9,7 @@ const size = 55;
 
 export default function Focus(props) {
     return (
-        <div id-='focus' className='presentu-fn-comp-focus' >
+        <div id='focus' className='presentu-fn-comp-focus' >
             <div className='content-width-rule fr'>
                 <div className='decorator' >
                     <h1>U</h1>

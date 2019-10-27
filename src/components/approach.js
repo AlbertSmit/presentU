@@ -6,7 +6,7 @@ const imgtemp = "https://presentu.nl/images/Middel-14d.png";
 export default function Approach(props) {
 
     return (
-        <div className='presentu-fn-comp-approach' >
+        <div id='werkwijze' className='presentu-fn-comp-approach' >
             <div className='content-width-rule fc'>
                 <div id='skills' className='presentu-approach-content' >
 

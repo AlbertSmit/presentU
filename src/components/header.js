@@ -22,13 +22,13 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <div className='logo' style={{ margin: 0 }}>
         <Link
           to="/"
           className="link">
           <img src={logo}></img>
         </Link>
-      </h1>
+      </div>
       <Menu />
     </div>
   </header>
