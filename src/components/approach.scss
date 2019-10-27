@@ -67,6 +67,11 @@
         li {
           padding: 0;
           margin: 0.4rem 0;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 0.9rem;
+            margin: 0.6rem 0;
+          }
         }
       }
 
@@ -123,6 +128,20 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .presentu-approach-content {
+    flex-direction: column;
+
+    .presentu-approach-boxes {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .presentu-approach-spacer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
   .presentu-approach-content {
     flex-direction: column;
 

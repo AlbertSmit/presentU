@@ -28,3 +28,11 @@
     font-size: 0.9rem;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .presentu-whowhatwhere-content {
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+}
