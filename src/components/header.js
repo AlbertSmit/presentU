@@ -14,14 +14,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      className='header'
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+    <div className='header'>
       <div className='logo' style={{ margin: 0 }}>
         <Link
           to="/"

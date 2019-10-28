@@ -62,7 +62,7 @@ export default function Contact(props) {
                                 <Field
                                 name="email"
                                 component="input"
-                                type="text"
+                                type="email"
                                 placeholder="info@voorbeeld.com"
                                 className='contact-field'
                                 />
@@ -73,7 +73,7 @@ export default function Contact(props) {
                                 <Field
                                 name="number"
                                 component="input"
-                                type="text"
+                                type="tel"
                                 placeholder="06 – 1212 3434"
                                 className='contact-field'
                                 />

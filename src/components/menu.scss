@@ -2,22 +2,23 @@
 
 .menu {
   display: flex;
-  flex: 2;
+  flex: 3;
   align-self: center;
   justify-content: flex-end;
 
   h6 {
     font-display: $system-font;
+    color: $colors-azure;
     font-size: 0.7rem;
     font-weight: 400;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
     margin: 0;
   }
 
   .slogan {
     color: $colors-black;
     font-weight: 600;
-    padding-right: 2rem;
+    padding-right: 0.5rem;
   }
 
   a {
