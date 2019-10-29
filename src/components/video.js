@@ -8,7 +8,7 @@ export default function Video(props) {
             <div className='content-width-rule fc' >
                 <div className='video'>
                     <VideoSource
-                        videoSrcURL="https://www.youtube.com/embed/FJbUTPHhNVg"
+                        videoSrcURL={props.data.prismicVideo.data.youtube.url}
                         videoTitle="PresentU Promo"
                     />
                 </div>

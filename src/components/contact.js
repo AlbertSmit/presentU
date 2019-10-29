@@ -22,11 +22,12 @@ export default function Contact(props) {
         .catch(e => console.error(e))
     }
 
+    console.log(props)
     return (
         <div id='contact' className='presentu-fn-comp-contact' >
             <div className='content-width-rule fc'>
                 <h2 className='text-pink' >
-                    <div className='html' dangerouslySetInnerHTML={{ __html: props.data.prismicFocus.data.content.html }}/>
+                    <div className='html' dangerouslySetInnerHTML={{ __html: props.data.prismicContact.data.content.html, }}/>
                 </h2>
                 <Form
                     id="invisible-recaptcha-form"

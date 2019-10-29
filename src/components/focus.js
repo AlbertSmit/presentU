@@ -44,7 +44,7 @@ export default function Focus(props) {
                             <h3 className='focus-title' >{props.data.prismicFocus.data.contact.text}</h3>
                             <div
                                 dangerouslySetInnerHTML={{
-                                    __html: props.data.prismicFocus.data.contact_content.html,
+                                    __html: props.data.prismicFocus.data.content_content.html,
                                 }}
                             />
                         </div>
@@ -53,7 +53,7 @@ export default function Focus(props) {
                             <h3 className='focus-title' >{props.data.prismicFocus.data.resultaatgericht.text}</h3>
                             <div
                                 dangerouslySetInnerHTML={{
-                                    __html: props.data.prismicFocus.data.resultaat_content.html,
+                                    __html: props.data.prismicFocus.data.resultaatgericht_content.html,
                                 }}
                             />
                         </div>

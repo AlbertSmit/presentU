@@ -20,130 +20,190 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Landing data={data}/>
-    <Video />
+    <Video data={data}/>
     <About data={data}/>
     <WhoWhatWhere data={data}/>
-    <Approach />
-    <Development />
+    <Approach data={data}/>
+    <Development data={data}/>
     <Focus data={data}/>
     <Illustration data={data}/>
     <TeacherHighlight data={data}/>
     <LogoWall data={data}/>
     <Contact data={data}/>
-
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
   </Layout>
 )
 
 export const query = graphql`
   query {
-  allPrismicTeacher {
-    edges {
-      node {
-        data {
-          image {
-            url
-            alt
-          }
-          mailto {
-            text
-          }
-          name {
-            text
-          }
-          story {
-            html
+    prismicFocus {
+      data {
+        contact {
+          text
+        }
+        content_content {
+          html
+        }
+        fysiek {
+          text
+        }
+        fysiek_content {
+          html
+        }
+        resultaatgericht {
+          text
+        }
+        resultaatgericht_content {
+          html
+        }
+        stem {
+          text
+        }
+        stem_content {
+          html
+        }
+      }
+    }
+    allPrismicTeacher {
+      edges {
+        node {
+          data {
+            image {
+              url
+              alt
+            }
+            mailto {
+              text
+            }
+            name {
+              text
+            }
+            story {
+              html
+            }
           }
         }
       }
     }
-  }
-  allPrismicClient {
-    edges {
-      node {
-        id
-        data {
-          logo {
-            url
+    allPrismicClient {
+      edges {
+        node {
+          data {
+            logo {
+              url
+            }
+            name {
+              text
+            }
+            testimonial {
+              html
+            }
           }
-          name {
-            text
-          }
-          testimonial {
-            html
-            text
-          }
+          id
         }
       }
     }
-  }
-  prismicFocus {
+    prismicContact {
+      data {
+        content {
+          html
+        }
+      }
+    }
+    prismicDevelopment {
+      data {
+        image {
+          url
+        }
+        content {
+          html
+        }
+        ontwikkeling {
+          text
+        }
+      }
+    }
+    prismicAbout {
+      data {
+        who {
+          text
+        }
+        content {
+          html
+        }
+      }
+    }
+    prismicVideo {
+      data {
+        youtube {
+          url
+        }
+      }
+    }
+    prismicWhoWhatWhy {
+      data {
+        waarom {
+          text
+        }
+        waarom_content {
+          html
+        }
+        wat {
+          text
+        }
+        wat_content {
+          html
+        }
+        wie {
+          text
+        }
+        wie_content {
+          html
+        }
+      }
+    }
+    prismicHomepageSubHeader {
+      data {
+        subheader {
+          html
+        }
+      }
+    }
+    prismicApproach {
     data {
-      content {
+      basisvaardigheden__title {
+        text
+      }
+      basisvaardigheden_image {
+        url
+      }
+      basisvaardigheden_aan_de_hand_van {
         html
       }
-      broodtekst {
-        text
-      }
-      contact {
-        text
-      }
-      contact_content {
-        text
+      basisvaardigheden_wat_je_leert {
         html
       }
-      fysiek {
-        text
-      }
-      fysiek_content {
-        text
+      expertvaardigheden_aan_de_hand_van {
         html
       }
-      koptekst {
+      expertvaardigheden_image {
+        url
+      }
+      expertvaardigheden_title {
         text
       }
-      over {
-        text
-      }
-      over_content {
-        text
+      expertvaardigheden_wat_je_leert {
         html
       }
-      resultaat_content {
-        text
+      story_skills_image {
+        url
+      }
+      story_skills_aan_de_hand_van {
         html
       }
-      resultaatgericht {
+      story_skills_title {
         text
       }
-      stem {
-        text
-      }
-      stem_content {
-        text
-        html
-      }
-      waarom {
-        text
-      }
-      waarom_content {
-        text
-        html
-      }
-      wat {
-        text
-      }
-      wat_content {
-        text
-        html
-      }
-      wie {
-        text
-      }
-      wie_content {
-        text
+      story_skills_wat_je_leert {
         html
       }
     }

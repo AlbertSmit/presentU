@@ -10,7 +10,7 @@ export default function About(props) {
             <div className='content-width-rule fc'>
                 <div className='about-text-splitter' >
                     <div className='about-text-who' >
-                        <h1>{props.data.prismicFocus.data.over.text}</h1>
+                        <h1>{props.data.prismicAbout.data.who.text}</h1>
                     </div>
                     <div className='illustration'>
                         <img src={x}/>
@@ -20,7 +20,7 @@ export default function About(props) {
                     <div className='about-text-block' >
                         <div
                             dangerouslySetInnerHTML={{
-                                __html: props.data.prismicFocus.data.over_content.html,
+                                __html: props.data.prismicAbout.data.content.html,
                             }}
                         />
                     </div>

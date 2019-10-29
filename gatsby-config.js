@@ -42,10 +42,10 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         // The name of your prismic.io repository. This is required.
-        repositoryName: 'presentu-dev',
+        repositoryName: 'presentu',
 
         // An API access token to your prismic.io repository. This is required.
-        accessToken: 'MC5YUGp5cUJJQUFOY3VhbFZ6.OO-_ve-_ve-_vSTvv71NVO-_ve-_vRpZJF9SJe-_ve-_ve-_vQcGOu-_ve-_ve-_vQTvv73vv73vv71N77-9Xg',
+        accessToken: 'MC5YYmRUaXhZQUFDY0E5Zmtu.ACZ877-977-977-9fO-_vSxV77-9Oe-_vXJf77-9Jgtf77-9Qi_vv73vv70bJg0y77-977-977-977-9',
 
         // Set a link resolver function used to process links in your content.
         // Fields with rich text formatting or links to internal content use this

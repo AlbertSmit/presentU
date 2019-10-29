@@ -9,7 +9,7 @@ export default function TeacherHighlight(props) {
                     
                     {props.data.allPrismicTeacher.edges.map(i => {
                         return(
-                            <div id='highlight' className='highlight' >
+                            <div id='highlight' className='highlight' key={i.node.data.name.text}>
                                 <div className='image'>
                                     <img 
                                         alt={i.node.data.image.alt} 

@@ -1,39 +1,34 @@
 import React from 'react'
 import './approach.scss'
 
-const imgtemp = "https://presentu.nl/images/Middel-14d.png";
-
 export default function Approach(props) {
-
     return (
         <div id='werkwijze' className='presentu-fn-comp-approach' >
             <div className='content-width-rule fc'>
                 <div id='skills' className='presentu-approach-content' >
 
                     <div id='column' className='presentu-approach-boxes' >                       
-                        <div className='image'><img src={imgtemp}/></div>
+                        <div className='image'><img src={props.data.prismicApproach.data.basisvaardigheden_image.url}/></div>
                         <h3 className='pre'>1</h3>
                         <div className='box'>
-                            <h3 className='text-white'>Basisvaardigheden</h3>
+                            <h3 className='text-white'>{props.data.prismicApproach.data.basisvaardigheden__title.text}</h3>
                         </div>
                         <div className='subbox'>
                             <div className='spacer'>
                                 <h5>Wat je leert</h5>
-                                <ul>
-                                    <li>Plezier in presenteren</li>
-                                    <li>Controle over zenuwen</li>
-                                    <li>Technische vaardigheden</li>
-                                    <li>Ontdek je stijl</li>
-                                </ul>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicApproach.data.basisvaardigheden_wat_je_leert.html,
+                                    }}
+                                />
                             </div>
                             <div className='spacer'>
                                 <h5>Aan de hand van</h5>
-                                <ul>
-                                    <li>0-meting</li>
-                                    <li>Persoonlijk ontwikkelplan</li>
-                                    <li>Basistraining presentatie</li>
-                                    <li>Uitgebreide feedback van trainers en deelnemers</li>
-                                </ul>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicApproach.data.basisvaardigheden_aan_de_hand_van.html,
+                                    }}
+                                />
                             </div>
                         </div>
                     </div>
@@ -43,27 +38,27 @@ export default function Approach(props) {
                     </div>
 
                     <div id='column' className='presentu-approach-boxes' >
-                        <div className='image'><img src={imgtemp}/></div>
+                        <div className='image'><img src={props.data.prismicApproach.data.story_skills_image.url}/></div>
                         <h3 className='pre'>2</h3>
                         <div className='box'>
-                            <h3 className='text-white'>Story skills</h3>
+                            <h3 className='text-white'>{props.data.prismicApproach.data.story_skills_title.text}</h3>
                         </div>
                         <div className='subbox'>
                             <div className='spacer'>
                                 <h5>Wat je leert</h5>
-                                <ul>
-                                    <li>Je eigen verhaal vertellen</li>
-                                    <li>Een verhaal opbouwen</li>
-                                    <li>Schrijven voor verschillend publiek</li>
-                                </ul>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicApproach.data.story_skills_aan_de_hand_van.html,
+                                    }}
+                                />
                             </div>
                             <div className='spacer'>
                                 <h5>Aan de hand van</h5>
-                                <ul>
-                                    <li>Story-telling training I & II</li>
-                                    <li>Proces van schaven en verbeteren</li>
-                                    <li>Leren wat werkt en niet werkt voor jou</li>
-                                </ul>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicApproach.data.story_skills_wat_je_leert.html,
+                                    }}
+                                />
                             </div>
                         </div>
                     </div>
@@ -73,28 +68,27 @@ export default function Approach(props) {
                     </div>
 
                     <div id='column' className='presentu-approach-boxes' >
-                        <div className='image'><img src={imgtemp}/></div>
+                        <div className='image'><img src={props.data.prismicApproach.data.expertvaardigheden_image.url}/></div>
                         <h3 className='pre'>3</h3>
                         <div className='box'>
-                            <h3 className='text-white'>Expertvaardigheden</h3>
+                            <h3 className='text-white'>{props.data.prismicApproach.data.expertvaardigheden_title.text}</h3>
                         </div>
                         <div className='subbox'>
                             <div className='spacer'>
                                 <h5>Wat je leert</h5>
-                                <ul>
-                                    <li>Oefenen voor groepen</li>
-                                    <li>Uitgebreide aandacht voor jouw focuspunten bij presenteren</li>
-                                    <li>Integreren van vaardigheden uit I & II</li>
-                                </ul>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicApproach.data.expertvaardigheden_wat_je_leert.html,
+                                    }}
+                                />
                             </div>
                             <div className='spacer'>
                                 <h5>Aan de hand van</h5>
-                                <ul>
-                                    <li>0-meting</li>
-                                    <li>Persoonlijk ontwikkelplan</li>
-                                    <li>Basistraining presentatie</li>
-                                    <li>Uitgebreide feedback van trainers en deelnemers</li>
-                                </ul>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicApproach.data.expertvaardigheden_aan_de_hand_van.html,
+                                    }}
+                                />
                             </div>
                         </div>
                     </div>

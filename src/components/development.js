@@ -1,8 +1,6 @@
 import React from 'react'
 import './development.scss'
 
-const imgtemp = "https://presentu.nl/images/Middel-14d.png";
-
 export default function Development(props) {
 
     return (
@@ -14,11 +12,15 @@ export default function Development(props) {
                         <div className='box'>
                             
                             <div className='flex-divider'>
-                                <img src={imgtemp} />
+                                <img src={props.data.prismicDevelopment.data.image.url} />
                             </div>
                             <div className='flex-divider'>
-                                <h4>persoonlijke ontwikkeling</h4>
-                                <p>In onze trainingen ga je aan de slag met persoonlijke thema’s en uitdagingen. Zaken die je in je presentatie tegenkomt kom je waarschijnlijk vaker tegen. In de trainingen gaan we hiermee op presentatiegebied aan de slag.</p>
+                                <h4>{props.data.prismicDevelopment.data.ontwikkeling.text}</h4>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: props.data.prismicDevelopment.data.content.html,
+                                    }}
+                                />                            
                             </div>
                             
                         </div>

@@ -34,9 +34,11 @@ export default function Landing(props) {
                         Maarten <span style={{color: currentColor}}>( <img src={m}></img> )</span> en Sus <span style={{color: currentColor}}>( <img src={s}></img> )</span>, 
                         dat iedereen kneitergoed kan leren presenteren.
                     </h1>
-                    <p>
-                        {props.data.prismicFocus.data.broodtekst.text}
-                    </p>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: props.data.prismicHomepageSubHeader.data.subheader.html,
+                        }}
+                    />
                 </div>
             </div>
         </div>
