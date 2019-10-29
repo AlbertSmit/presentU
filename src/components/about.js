@@ -1,8 +1,7 @@
 import React from 'react'
 
 import './about.scss'
-
-const x = "https://presentu.nl/images/Middel-3dff222.png";
+const about = require('../static/images/about.png')
 
 export default function About(props) {
     return (
@@ -13,7 +12,7 @@ export default function About(props) {
                         <h1>{props.data.prismicAbout.data.who.text}</h1>
                     </div>
                     <div className='illustration'>
-                        <img src={x}/>
+                        <img src={about}/>
                     </div>
                 </div>
                 <div className='about-text-splitter' >
