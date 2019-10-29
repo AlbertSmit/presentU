@@ -1,0 +1,86 @@
+@import '../utilities/variables.scss';
+
+.teachers {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: auto;
+
+  h1 {
+    padding-top: 2rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: $colors-red;
+    font-family: $secondary-font;
+  }
+
+  p {
+    color: $colors-gray;
+  }
+}
+
+.highlight {
+  display: flex;
+  align-self: flex-start;
+  max-width: 45%;
+  flex: 1 45%;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+
+  .image {
+    margin-bottom: -6rem;
+    margin-left: 2rem;
+
+    img {
+      max-height: 10rem;
+      transition: 1s ease-out;
+    }
+  }
+
+  .body {
+    z-index: 2;
+    background-color: $colors-baby;
+    background: linear-gradient(
+      to bottom,
+      rgba(197, 208, 210, 0),
+      $colors-baby 15%
+    );
+    height: auto;
+  }
+}
+
+.highlight:hover {
+  img {
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(10px);
+  }
+}
+
+#teachers > #highlight {
+  -webkit-transition: 0.5s;
+  transition: ease 0.5s;
+}
+
+/* fade ALL out on parent hover */
+#teachers:hover > #highlight {
+  opacity: 0.8;
+}
+
+/* fade ONE in on hover */
+#teachers > #highlight:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .teachers {
+    flex-direction: column;
+  }
+
+  .highlight {
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}

@@ -1,0 +1,102 @@
+@import '../utilities/variables.scss';
+
+.logowall-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  height: auto;
+
+  .logowall-item {
+    width: auto;
+    max-height: auto;
+    flex: 1 32%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 800px) {
+      flex: 1 49%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      flex: 1 100%;
+    }
+
+    img {
+      max-height: 8rem;
+      max-width: 80%;
+      width: auto;
+      padding: 1rem;
+
+      @media only screen and (max-width: 800px) {
+        max-width: 65%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+.logowall-hero-text {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+
+  h1 {
+    color: $colors-azure;
+    font-family: $secondary-font;
+  }
+}
+
+#collection > #entry {
+  -webkit-transition: 0.5s;
+  transition: ease 0.5s;
+}
+
+/* fade ALL out on parent hover */
+#collection:hover > #entry {
+  opacity: 0.5;
+}
+
+/* fade ONE in on hover */
+#collection > #entry:hover {
+  opacity: 1;
+}
+
+.pU-tip {
+  background-color: $colors-white !important;
+  border-radius: 7px;
+  opacity: 0.98 !important;
+  color: $colors-red !important;
+  box-shadow: $defaultShadow;
+  max-width: 475px;
+  padding: 2rem 3rem 0.5rem 3rem;
+
+  &.place-bottom {
+    &:after {
+      border-bottom-color: $colors-white !important;
+    }
+  }
+
+  &.place-top {
+    &:after {
+      border-top-color: $colors-white !important;
+    }
+  }
+
+  &.place-left {
+    &:after {
+      border-left-color: $colors-white !important;
+    }
+  }
+
+  &.place-right {
+    &:after {
+      border-right-color: $colors-white !important;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import '../utilities/variables';
+
+header {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+
+    .logo {
+      flex: 1;
+
+      .link {
+        color: $colors-black;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 70%;
+        max-height: 5rem;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    .header {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+
+        .link {
+          display: flex;
+          margin: 0 auto;
+        }
+
+        img {
+          margin: 0 auto;
+          max-width: 70%;
+          max-height: 5rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

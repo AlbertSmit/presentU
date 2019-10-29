@@ -1,28 +1,29 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import './about.css'
 
-export default function About() {
+import './about.scss'
+
+const x = "https://presentu.nl/images/Middel-3dff222.png";
+
+export default function About(props) {
     return (
-        <div className='presentu-fn-comp-about' >
-            <div className='about-text-splitter' >
-                <div className='about-text-who' >
-                    <h1>Wie?</h1>
+        <div id='wie' className='presentu-fn-comp-about' >
+            <div className='content-width-rule fc'>
+                <div className='about-text-splitter' >
+                    <div className='about-text-who' >
+                        <h1>{props.data.prismicAbout.data.who.text}</h1>
+                    </div>
+                    <div className='illustration'>
+                        <img src={x}/>
+                    </div>
                 </div>
-            </div>
-            <div className='about-text-splitter' >
-                <div className='about-text-block' >
-                    <p>
-                        Een bundeling van vaardigheden tussen een fysiek acteur en 
-                        een cabaretier is uniek. Wij ontwerpen onze trainingen op basis 
-                        van theatertechnieken uit onze ervaring als spelers.
-                    </p>
-                    <p>
-                        Wij zijn zeer persoonlijk in onze aanpak, we zijn immers maar met twee. 
-                        Altijd gericht op jouw actuele werkcontext, geen standaard formats. 
-                        Wij brengen de kennis, afgestemd op de behoefte van de klant.
-                    </p>
-                    <Link to="/page-2/">Meer</Link>
+                <div className='about-text-splitter' >
+                    <div className='about-text-block' >
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: props.data.prismicAbout.data.content.html,
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

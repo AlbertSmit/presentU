@@ -1,0 +1,57 @@
+@import '../utilities/variables.scss';
+
+.footer {
+  padding: 1.5rem 0 3rem 0;
+  display: flex;
+  width: 100%;
+
+  div {
+    flex: 1;
+    padding: 2rem 0 2rem 0;
+    max-width: 80%;
+
+    h5 {
+      color: $colors-white;
+      font-size: 0.75rem;
+    }
+
+    a,
+    p {
+      display: block;
+      color: $colors-white;
+      opacity: 0.8;
+      font-family: $system-font;
+      margin: 0;
+      text-decoration: none;
+      font-size: 0.75rem;
+    }
+
+    address {
+      font-style: normal;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+      h5,
+      a,
+      p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .year {
+    display: none;
+  }
+
+  .extra {
+    display: none;
+  }
+}

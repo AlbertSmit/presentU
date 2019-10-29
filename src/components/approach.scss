@@ -1,0 +1,187 @@
+@import '../utilities/variables.scss';
+
+.presentu-approach-content {
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+  padding: 1rem 0 3rem 0;
+  // min-height: 35vh;
+
+  .presentu-approach-boxes {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    flex: 4;
+
+    .image {
+      z-index: 0;
+      max-height: 6rem;
+      align-self: flex-end;
+      padding: 1rem;
+      margin-right: 1rem;
+
+      img {
+        max-height: 10rem;
+      }
+    }
+
+    .box {
+      background-color: $colors-red;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: $mildShadow;
+      z-index: 1;
+
+      h3 {
+        padding-top: 0.3rem;
+        opacity: 0.9;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        font-weight: 400;
+      }
+    }
+
+    .subbox {
+      background-color: none;
+      border-radius: 15px;
+      padding: 1rem;
+      z-index: 0;
+
+      .spacer {
+        height: 14rem;
+      }
+
+      h5 {
+        padding-top: 2rem;
+        color: $colors-black;
+        opacity: 0.8;
+      }
+
+      ul {
+        color: $colors-white;
+        opacity: 0.8;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          padding: 0;
+          margin: 0.4rem 0;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 0.9rem;
+            margin: 0.6rem 0;
+          }
+        }
+      }
+
+      ul li::before {
+        content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $colors-white; /* Change the color */
+        opacity: 0.4;
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+    }
+
+    .pre {
+      margin: 0;
+      padding: 1rem;
+      opacity: 0.5;
+      font-weight: 500;
+      color: $colors-black;
+      text-align: left;
+    }
+  }
+
+  .presentu-approach-spacer {
+    flex: 0.8;
+
+    .arrow {
+      text-align: center;
+      color: $colors-baby;
+      font-size: 1.5rem;
+      // font-weight: 400;
+      padding-top: 12rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+#skills > #column {
+  -webkit-transition: 0.5s;
+  transition: ease 0.5s;
+}
+
+/* fade ALL out on parent hover */
+#skills:hover > #column {
+  opacity: 0.5;
+  transform: translateY(0px);
+}
+
+/* fade ONE in on hover */
+#skills > #column:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 860px) {
+  .presentu-approach-content {
+    flex-direction: column;
+
+    .presentu-approach-boxes {
+      padding-bottom: 0rem;
+
+      .image {
+        display: none;
+      }
+
+      .subbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .spacer {
+          flex: 1 0 45%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .presentu-approach-spacer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .presentu-approach-content {
+    flex-direction: column;
+
+    .presentu-approach-boxes {
+      padding-bottom: 0rem;
+      padding-bottom: 4rem;
+
+      .image {
+        display: none;
+      }
+
+      .subbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .spacer {
+          flex: 1;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .presentu-approach-spacer {
+    display: none;
+  }
+}

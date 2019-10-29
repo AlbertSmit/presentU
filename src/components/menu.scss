@@ -1,0 +1,50 @@
+@import '../utilities/variables.scss';
+
+.menu {
+  display: flex;
+  flex: 3;
+  align-self: center;
+  justify-content: flex-end;
+
+  h6 {
+    font-display: $system-font;
+    color: $colors-azure;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  .slogan {
+    color: $colors-black;
+    font-weight: 600;
+    padding-right: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    width: 100%;
+    flex: 1;
+
+    h6 {
+      padding-left: 0;
+      font-size: 0.9rem;
+      flex: 1;
+    }
+
+    .slogan {
+      display: none;
+    }
+  }
+}

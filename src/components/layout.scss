@@ -1,5 +1,11 @@
+@import '../utilities/variables.scss';
+@import url('https://use.typekit.net/iic0uan.css');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:400,500,700&display=swap');
+
 html {
-  font-family: sans-serif;
+  font-family: 'acumin-pro', sans-serif;
+  font-style: normal;
+  font-weight: 100;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -124,22 +130,22 @@ button,
 select {
   text-transform: none;
 }
-[type="reset"],
-[type="submit"],
+[type='reset'],
+[type='submit'],
 button,
-html [type="button"] {
+html [type='button'] {
   -webkit-appearance: button;
 }
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -159,21 +165,21 @@ legend {
 textarea {
   overflow: auto;
 }
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
@@ -199,15 +205,17 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: hsla(0, 0%, 0%, 0.6);
+  font-family: 'acumin-pro-wide', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 img {
   max-width: 100%;
@@ -571,10 +579,10 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -592,8 +600,8 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+    'Liberation Mono', Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -607,13 +615,13 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: ' ';
 }
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+  content: '';
 }
 @media only screen and (max-width: 480px) {
   html {
@@ -627,50 +635,144 @@ pre tt:after {
 .presentu-fn-comp-landing,
 .presentu-fn-comp-about,
 .presentu-fn-comp-whowhatwhere,
+.presentu-fn-comp-approach,
 .presentu-fn-comp-focus,
+.presentu-fn-comp-video,
 .presentu-fn-comp-illustration,
 .presentu-fn-comp-teacherhighlight,
 .presentu-fn-comp-logowall,
 .presentu-fn-comp-contact {
-  min-height: 80vh;
+  min-height: none;
+}
+
+.content-width-rule {
+  display: flex;
+  /* from main div */
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1rem 1rem;
+  padding-top: 0;
+}
+
+.fc {
+  flex-direction: column;
+}
+
+.fr {
+  flex-direction: row;
 }
 
 .presentu-fn-comp-landing {
-  background-color: none;
-  display: flex;
+  background-color: $colors-white;
+  // background: linear-gradient(203deg, #ffffff, #fff3f2, #ffffff, #fff6f6);
+  // background-size: 800% 800%;
+
+  // -webkit-animation: bgBreathe 30s ease infinite;
+  // -moz-animation: bgBreathe 30s ease infinite;
+  // animation: bgBreathe 30s ease infinite;
+}
+
+@-webkit-keyframes bgBreathe {
+  0% {
+    background-position: 88% 0%;
+  }
+  50% {
+    background-position: 13% 100%;
+  }
+  100% {
+    background-position: 88% 0%;
+  }
+}
+@-moz-keyframes bgBreathe {
+  0% {
+    background-position: 88% 0%;
+  }
+  50% {
+    background-position: 13% 100%;
+  }
+  100% {
+    background-position: 88% 0%;
+  }
+}
+@keyframes bgBreathe {
+  0% {
+    background-position: 88% 0%;
+  }
+  50% {
+    background-position: 13% 100%;
+  }
+  100% {
+    background-position: 88% 0%;
+  }
 }
 
 .presentu-fn-comp-about {
-  background-color: none;
-  display: flex;
+  position: relative;
+  background-color: #c5d0d2;
+  background: url('https://presentu.nl/images/Middel-5d.png');
+  background-position-x: 0px;
+  background-position-y: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $colors-baby;
   flex-direction: column;
 }
 
 .presentu-fn-comp-whowhatwhere {
-  background-color: none;
+  background-color: $colors-baby;
+}
+
+.presentu-fn-comp-approach {
+  background-color: $colors-red;
 }
 
 .presentu-fn-comp-focus {
   background-color: none;
-  display: flex;
 }
 
 .presentu-fn-comp-illustration {
-  background-color: lightpink;
+  background-color: $colors-red;
   display: flex;
 }
 
 .presentu-fn-comp-teacherhighlight {
-  background-color: #c5d0d2;
-  display: flex;
+  background-color: $colors-baby;
 }
 
 .presentu-fn-comp-logowall {
-  background-color: plum;
-  display: flex;
-  flex-direction: column;
+  background-color: $colors-white;
 }
 
 .presentu-fn-comp-contact {
-  background-color: gray;
+  background-color: $colors-red;
+}
+
+.presentu-fn-comp-video {
+  background-color: $colors-baby;
+}
+
+.presentu-fn-comp-footer {
+  background-color: $colors-red;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-pU-red {
+  color: #e73040;
+}
+
+.text-gray {
+  color: rgba(51, 51, 51, 0.83);
+}
+
+.text-pink {
+  color: #fbd4cd;
+}
+
+//fonts
+@font-face {
+  font-family: 'KlikScript';
+  src: url('../static/fonts/KlikScript-Regular.woff') format('woff');
 }

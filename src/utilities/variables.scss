@@ -1,0 +1,43 @@
+// default colors
+$colors-black: rgb(26, 26, 26);
+$colors-gray: rgba(0, 0, 0, 0.6);
+$colors-sludge: rgba(51, 51, 51, 0.45);
+$colors-baby: #c5d0d2;
+$colors-azure: #265880;
+$colors-white: white;
+$colors-red: #e73040;
+$colors-pink: #fbd4cd;
+$colors-border: #e46c76;
+
+// default fonts
+// $primary-font: Helvetica;
+$system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$primary-font: 'acumin-pro-wide', sans-serif;
+$secondary-font: 'Darker Grotesque', sans-serif;
+$tertiary-font: none;
+
+// css color filters:
+$filter-baby: invert(91%) sepia(6%) saturate(283%) hue-rotate(141deg)
+  brightness(92%) contrast(89%);
+$filter-azure: invert(33%) sepia(6%) saturate(5786%) hue-rotate(165deg)
+  brightness(87%) contrast(86%);
+$filter-red: invert(21%) sepia(88%) saturate(2533%) hue-rotate(339deg)
+  brightness(99%) contrast(87%);
+$filter-pink: invert(84%) sepia(34%) saturate(297%) hue-rotate(315deg)
+  brightness(101%) contrast(97%);
+
+//shadows
+$defaultShadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+  0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+  0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+
+$mildShadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+  0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+  0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+
+//fonts
+@font-face {
+  font-family: 'KlikScript';
+  src: url('../static/fonts/KlikScript-Regular.woff') format('woff');
+}
