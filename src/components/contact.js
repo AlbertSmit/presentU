@@ -22,7 +22,6 @@ export default function Contact(props) {
         .catch(e => console.error(e))
     }
 
-    console.log(props)
     return (
         <div id='contact' className='presentu-fn-comp-contact' >
             <div className='content-width-rule fc'>

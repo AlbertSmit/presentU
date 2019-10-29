@@ -1,9 +1,9 @@
 import React from 'react'
 import './landing.scss'
 
-const temp = 'https://presentu.nl/images/Middel-47dff-p-500.png';
-const m = 'https://presentu.nl/images/M.svg';
-const s = 'https://presentu.nl/images/S.svg';
+const landing = require('../static/images/Landing.png')
+const m = require('../static/images/M.svg')
+const s = require('../static/images/S.svg')
 
 const colors = [
     '#c5d0d2',
@@ -25,11 +25,10 @@ export default function Landing(props) {
         <div className='presentu-fn-comp-landing' >
             <div className='content-width-rule fr' >
                 <div className='presentu-landing-hero-image'>
-                    <img src={temp}></img>
+                    <img src={landing}></img>
                 </div>
                 <div className='presentu-landing-hero-content' >
                     <h1>
-                        {/* {props.data.prismicFocus.data.koptekst.text} */}
                         Bij PresentU geloven wij, 
                         Maarten <span style={{color: currentColor}}>( <img src={m}></img> )</span> en Sus <span style={{color: currentColor}}>( <img src={s}></img> )</span>, 
                         dat iedereen kneitergoed kan leren presenteren.
