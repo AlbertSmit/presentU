@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: 'presentU',
-    description: 'Presenteren vanuit theatervorm.',
+    description: 'Kies hoe je overkomt.',
     author: '@albertsmit',
   },
   plugins: [
@@ -46,6 +46,8 @@ module.exports = {
 
         // An API access token to your prismic.io repository. This is required.
         accessToken: process.env.PRISMIC_API_KEY,
+        // accessToken: 'MC5YYmRUaXhZQUFDY0E5Zmtu.ACZ877-977-977-9fO-_vSxV77-9Oe-_vXJf77-9Jgtf77-9Qi_vv73vv70bJg0y77-977-977-977-9',
+
 
         // Set a link resolver function used to process links in your content.
         // Fields with rich text formatting or links to internal content use this
