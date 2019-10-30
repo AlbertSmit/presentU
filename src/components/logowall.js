@@ -10,7 +10,6 @@ export default function LogoWall(props) {
                     <h1>Tevreden klanten</h1>
                 </div>
                 <div id='collection' className='logowall-collection'>
-                    <ReactTooltip effect="solid" className='pU-tip' html='true'/>
                     {props.data.allPrismicClient.edges.map(i => <div 
                         key={i.node.data.name.text} 
                         className='logowall-item' 
@@ -21,6 +20,7 @@ export default function LogoWall(props) {
                             alt={i.node.data.name.text}
                         />
                     </div>)}
+                    <ReactTooltip effect="solid" className='pU-tip' html={true}/>
                 </div>
             </div>
         </div>

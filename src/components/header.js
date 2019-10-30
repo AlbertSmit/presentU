@@ -5,7 +5,7 @@ import Menu from './menu'
 
 import './header.scss'
 
-const logo = 'http://presentu.nl/images/Middel-10d-p-500.png';
+const logo = require('../../static/images/Logo.png');
 
 const Header = ({ siteTitle }) => (
   <header
