@@ -1,8 +1,8 @@
 import React from 'react'
 import './focus.scss'
 
-const m = require('../static/images/M.svg')
-const s = require('../static/images/S.svg')
+const m = require('../../static/images/M.svg')
+const s = require('../../static/images/S.svg')
 const size = 55;
 
 export default function Focus(props) {

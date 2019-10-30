@@ -1,9 +1,9 @@
 import React from 'react'
 import './landing.scss'
 
-const landing = require('../static/images/Landing.png')
-const m = require('../static/images/M.svg')
-const s = require('../static/images/S.svg')
+const landing = require('../../static/images/Landing.png')
+const m = require('../../static/images/M.svg')
+const s = require('../../static/images/S.svg')
 
 const colors = [
     '#c5d0d2',

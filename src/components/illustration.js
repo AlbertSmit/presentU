@@ -3,7 +3,7 @@ import React from 'react'
 import './illustration.scss'
 
 export default function Illustration() {
-    const illustration = require('../static/images/Illustration.png'); 
+    const illustration = require('../../static/images/Illustration.png'); 
 
     return (
         <div className='presentu-fn-comp-illustration'>

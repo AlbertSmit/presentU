@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './about.scss'
-const about = require('../static/images/about.png')
+const about = require('../../static/images/about.png')
 
 export default function About(props) {
     return (
