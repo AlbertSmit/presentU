@@ -45,7 +45,7 @@ module.exports = {
         repositoryName: 'presentu',
 
         // An API access token to your prismic.io repository. This is required.
-        accessToken: 'PRISMIC_API_KEY',
+        accessToken: process.env.PRISMIC_API_KEY,
 
         // Set a link resolver function used to process links in your content.
         // Fields with rich text formatting or links to internal content use this
