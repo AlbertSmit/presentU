@@ -52,7 +52,7 @@ form {
     margin-right: 27px;
     padding: 16px 28px 39px 36px;
     background-color: transparent;
-    background-image: url('../static/images/button.png');
+    background-image: url('../../static/images/button.png');
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -88,6 +88,6 @@ form {
 //fonts
 @font-face {
   font-family: 'KlikScript';
-  src: url('../static/fonts/KlikScript-Regular.woff') format('woff')
-    url('../static/fonts/KlikScript-Regular.otf') format('opentype');
+  src: url('../../static/fonts/KlikScript-Regular.woff') format('woff')
+    url('../../static/fonts/KlikScript-Regular.otf') format('opentype');
 }
