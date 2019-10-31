@@ -1,6 +1,6 @@
 @import '../utilities/variables.scss';
 
-.presentu-landing-hero-content {
+.presentu-thanks-hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,22 +8,14 @@
   min-height: 80vh;
 
   h1 {
-    padding: 0 0 2rem 1rem;
+    padding: 0 0 0 1rem;
     font-family: $secondary-font;
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.5rem;
     color: $colors-black;
     animation: appear 2s ease;
-
-    span {
-      img {
-        max-width: 2rem;
-        margin: 0;
-      }
-    }
   }
-
   p {
     padding: 0 0 0 1rem;
     animation: appear 2s ease;
@@ -31,10 +23,18 @@
     opacity: 0;
     animation-fill-mode: forwards;
     hyphens: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $colors-azure;
+    padding: 0 0 0 1rem;
+    text-decoration: none;
+    margin: 0;
   }
 }
 
-.presentu-landing-hero-image {
+.presentu-thanks-hero-image {
   display: flex;
   flex: 2;
 
@@ -44,16 +44,16 @@
   }
 }
 
-.presentu-landing-hero-image + .presentu-landing-hero-content {
+.presentu-thanks-hero-image + .presentu-thanks-hero-content {
   margin-left: 10%;
 }
 
 @media only screen and (max-width: 860px) {
-  .presentu-landing-hero-image + .presentu-landing-hero-content {
+  .presentu-thanks-hero-image + .presentu-thanks-hero-content {
     margin-left: 0%;
   }
 
-  .presentu-landing-hero-image {
+  .presentu-thanks-hero-image {
     display: block;
     flex: 1;
     justify-content: center;
@@ -61,7 +61,7 @@
     padding: 2rem;
   }
 
-  .presentu-landing-hero-content {
+  .presentu-thanks-hero-content {
     h1 {
       padding: 0;
       font-size: 2.4rem;
@@ -74,15 +74,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .presentu-landing-hero-image + .presentu-landing-hero-content {
+  .presentu-thanks-hero-image + .presentu-thanks-hero-content {
     margin-left: 0%;
   }
 
-  .presentu-landing-hero-image {
+  .presentu-thanks-hero-image {
     display: none;
   }
 
-  .presentu-landing-hero-content {
+  .presentu-thanks-hero-content {
     min-height: auto;
     padding: 6rem 0;
 
