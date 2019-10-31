@@ -10,14 +10,14 @@ export default function Contact(props) {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                // 'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         })
         .then(res => {
             console.log(res)
             console.log(res.status)
+            if (res.status === 200 ) window.location.replace('/bedankt')
         })
         .catch(e => console.error(e))
     }
@@ -80,13 +80,13 @@ export default function Contact(props) {
                             </div>
                             
                             <input type="hidden" name="_gotcha"></input>
-                            {/* <div class="g-recaptcha" data-sitekey="6LcGYawUAAAAABXzvzccHXKiHuI1_uCRSu7Oyj4I"></div> */}
 
                             <div className="contact-button">
                                 <button 
                                     type="submit" 
-                                    disabled={submitting || pristine}>
-                                Klik
+                                    disabled={submitting || pristine}
+                                >
+                                    Klik
                                 </button>
 
                             </div>
