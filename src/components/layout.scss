@@ -664,12 +664,6 @@ pre tt:after {
 
 .presentu-fn-comp-landing {
   background-color: $colors-white;
-  // background: linear-gradient(203deg, #ffffff, #fff3f2, #ffffff, #fff6f6);
-  // background-size: 800% 800%;
-
-  // -webkit-animation: bgBreathe 30s ease infinite;
-  // -moz-animation: bgBreathe 30s ease infinite;
-  // animation: bgBreathe 30s ease infinite;
 }
 
 @-webkit-keyframes bgBreathe {
@@ -709,7 +703,7 @@ pre tt:after {
 .presentu-fn-comp-about {
   position: relative;
   background-color: #c5d0d2;
-  background: url('https://presentu.nl/images/Middel-5d.png');
+  background: url('https://presentu.nl/images/AboutBg.png');
   background-position-x: 0px;
   background-position-y: 200px;
   background-size: cover;
