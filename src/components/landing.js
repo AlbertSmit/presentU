@@ -38,6 +38,7 @@ export default function Landing(props) {
                             __html: props.data.prismicHomepageSubHeader.data.subheader.html,
                         }}
                     />
+                    <a href="#contact" className='contactbutton'>Neem contact op!</a>
                 </div>
             </div>
         </div>
