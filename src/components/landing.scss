@@ -32,6 +32,25 @@
     animation-fill-mode: forwards;
     hyphens: auto;
   }
+
+  .contactbutton {
+    opacity: 0;
+    padding: 0.5rem 3rem;
+    margin: 3rem 0rem 0rem 1rem;
+    background-color: $colors-gray;
+    border-radius: 10px;
+    box-shadow: $mildShadow;
+    color: $colors-white;
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-decoration: none;
+    align-self: flex-start;
+
+    animation: appear 2s ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .presentu-landing-hero-image {
