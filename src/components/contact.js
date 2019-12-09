@@ -86,7 +86,7 @@ export default function Contact(props) {
                                     type="submit" 
                                     disabled={submitting || pristine}
                                 >
-                                    Dat wil ik!
+                                    dat wil ik!
                                 </button>
 
                             </div>
